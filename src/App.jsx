@@ -44,4 +44,27 @@ export default function App() {
       </div>
     </ToastProvider>
   )
+  import { useEffect } from 'react';
+
+function App() {
+  useEffect(() => {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    // Set type and path for a JPG file
+    link.type = 'image/jpeg';
+    link.href = '/logo.jpg'; 
+  }, []);
+
+  return (
+    <div>
+      <h1>My Website</h1>
+    </div>
+  );
+}
+
+export default App;
 }
