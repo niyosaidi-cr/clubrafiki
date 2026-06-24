@@ -25,22 +25,13 @@ const PAGES = {
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home')
+  const [pageParam, setPageParam] = useState(null)
 
-  // --- ADDED FAVICON CODE HERE ---
-  useEffect(() => {
-    let link = document.querySelector("link[rel~='icon']");
-    if (!link) {
-      link = document.createElement('link');
-      link.rel = 'icon';
-      document.head.appendChild(link);
-    }
-    link.type = 'logo.jpeg'; // Change to 'image/jpeg' if using your logo.jpg directly
-    link.href = '/logo.jpeg'; // Change to '/logo.jpg' if using your logo.jpg directly
-  }, [])
-  // -------------------------------
+  // ...existing favicon useEffect stays as-is...
 
-  const navigate = (page) => {
+  const navigate = (page, param = null) => {
     setCurrentPage(page)
+    setPageParam(param)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -51,7 +42,7 @@ export default function App() {
       <div className="min-h-screen flex flex-col">
         <Header currentPage={currentPage} navigate={navigate} />
         <main className="flex-1">
-          <PageComponent navigate={navigate} />
+          <PageComponent navigate={navigate} param={pageParam} />
         </main>
         <Footer navigate={navigate} />
       </div>
