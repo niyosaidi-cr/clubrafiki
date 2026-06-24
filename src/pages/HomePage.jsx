@@ -3,6 +3,34 @@ import { heroSlides, stats, programs, testimonials } from '../data/siteData'
 import NewsCard from '../components/NewsCard'
 import { news } from '../data/siteData'
 
+function HeroSlider({ navigate }) {
+  // ...unchanged state/effects...
+
+  return (
+    <section className="relative h-[85vh] min-h-[520px] overflow-hidden">
+      {/* ...slides unchanged... */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+        {/* ...tag/title/sub unchanged... */}
+        <div className="flex gap-3 flex-wrap justify-center">
+          <button className="btn-primary" onClick={() => navigate('contact')}>
+            Get Involved
+          </button>
+          <button className="btn-outline" onClick={() => navigate('programs', heroSlides[current].program)}>
+            Learn More
+          </button>
+        </div>
+      </div>
+      {/* ...arrows/dots unchanged... */}
+    </section>
+  )
+}
+
+export default function HomePage({ navigate }) {
+  return (
+    <>
+      <HeroSlider navigate={navigate} />
+      {/* ...rest unchanged... */}
+
 function HeroSlider() {
   const [current, setCurrent] = useState(0)
 
