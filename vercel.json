@@ -1,8 +1,10 @@
 {
-  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!assets/|.*\\.(?:png|jpg|jpeg|gif|svg|ico|css|js|webp)$).*)" ,
+      "handle": "filesystem"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
