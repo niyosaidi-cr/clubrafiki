@@ -26,6 +26,19 @@ const PAGES = {
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home')
 
+  // --- ADDED FAVICON CODE HERE ---
+  useEffect(() => {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.type = 'image/x-icon'; // Change to 'image/jpeg' if using your logo.jpg directly
+    link.href = '/favicon.ico'; // Change to '/logo.jpg' if using your logo.jpg directly
+  }, [])
+  // -------------------------------
+
   const navigate = (page) => {
     setCurrentPage(page)
     window.scrollTo({ top: 0, behavior: 'smooth' })
