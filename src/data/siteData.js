@@ -57,35 +57,39 @@ export const heroSlides = [
   {
     img: 'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg',
     tag: 'Training & Education',
+    program: 'training', // maps to detailKey in ProgramsPage.jsx
     title: 'Empowering the Youth of Nyamirambo',
     sub: 'Providing skills, opportunities, and a safe space for children and youth since 1974.',
   },
   {
     img: 'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg',
     tag: 'Sport & Recreation',
+    program: 'sports',
     title: 'Building Champions On and Off the Court',
     sub: 'Basketball, volleyball, martial arts and more to develop discipline and teamwork.',
   },
   {
     img: 'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg',
     tag: 'Cultural Initiatives',
+    program: 'cultural',
     title: 'Celebrating Rwandan Heritage & Identity',
     sub: 'Traditional dance, drama, and the arts keep our culture alive for the next generation.',
   },
   {
     img: 'https://i.ibb.co/HpYNKtq4/Semester-report-2024-photo.png',
     tag: 'Girls Empowerment',
+    program: 'girls',
     title: 'Lifting Every Girl to Her Full Potential',
     sub: 'The Girl Up program equips young women with leadership, skills, and confidence.',
   },
   {
     img: 'https://i.ibb.co/PsjqzjV4/Music-2-1.png',
     tag: 'Youth Arts',
+    program: 'arts',
     title: 'Where Creativity Meets Community',
     sub: 'Music, fashion, urban dance, and film — creative expression for every young person.',
   },
 ]
-
 export const programs = [
   {
     id: 'training',
