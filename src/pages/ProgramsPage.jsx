@@ -2,6 +2,17 @@ import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
 import ProgramDetailPage from './programs/ProgramDetailPage'
 import { programDetails } from '../data/programDetails'
+import { useState, useEffect } from 'react'
+// ...other imports stay the same...
+
+export default function ProgramsPage({ navigate, param }) {
+  const [activeDetail, setActiveDetail] = useState(param || null)
+
+  useEffect(() => {
+    setActiveDetail(param || null)
+  }, [param])
+
+  // ...rest of the component is unchanged...
 
 const activities = [
   {
