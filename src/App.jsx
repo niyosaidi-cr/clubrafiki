@@ -34,8 +34,8 @@ export default function App() {
       link.rel = 'icon';
       document.head.appendChild(link);
     }
-    link.type = 'image/x-icon'; // Change to 'image/jpeg' if using your logo.jpg directly
-    link.href = '/favicon.ico'; // Change to '/logo.jpg' if using your logo.jpg directly
+    link.type = 'logo/jpeg'; // Change to 'image/jpeg' if using your logo.jpg directly
+    link.href = '/logo.jpeg'; // Change to '/logo.jpg' if using your logo.jpg directly
   }, [])
   // -------------------------------
 
