@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
 import ProgramDetailPage from './programs/ProgramDetailPage'
 import { programDetails } from '../data/programDetails'
 
-// Static content array placed outside the component to preserve memory and prevent re-creation on re-render
 const activities = [
   {
     detailKey: 'training',
@@ -49,26 +48,17 @@ const activities = [
   },
 ]
 
-export default function ProgramsPage({ navigate, param }) {
-  // Initialize state with param if it exists
-  const [activeDetail, setActiveDetail] = useState(param || null)
+export default function ProgramsPage({ navigate }) {
+  const [activeDetail, setActiveDetail] = useState(null)
 
-  // Listen to deep linking changes if 'param' changes dynamically from the parent router
-  useEffect(() => {
-    setActiveDetail(param || null)
-  }, [param])
-
-  // Short-circuit render if a detail page is active
+  // Show detail page if one is selected
   if (activeDetail) {
     return (
       <ProgramDetailPage
         program={programDetails[activeDetail]}
         navigate={(page) => {
-          if (page === 'programs') {
-            setActiveDetail(null)
-          } else {
-            navigate(page)
-          }
+          if (page === 'programs') setActiveDetail(null)
+          else navigate(page)
         }}
       />
     )
@@ -80,7 +70,6 @@ export default function ProgramsPage({ navigate, param }) {
         title="Our Programs"
         subtitle="Comprehensive activities designed to unlock the full potential of every young person in our community."
       />
-      
       <section className="py-20 bg-cream">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,14 +96,12 @@ export default function ProgramsPage({ navigate, param }) {
                     </span>
                   </div>
                 </div>
-                
                 <div className="p-6">
                   <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full mb-3 ${a.badgeColor}`}>
                     {a.badge}
                   </span>
                   <h3 className="font-display text-xl text-dark mb-2">{a.title}</h3>
                   <p className="text-muted text-sm leading-relaxed">{a.desc}</p>
-                  
                   <div className="mt-4 flex items-center gap-1 text-orange text-sm font-bold">
                     Learn More
                     <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-orange fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
