@@ -77,7 +77,7 @@ export default function ProgramsPage({ navigate }) {
               <button
                 key={i}
                 onClick={() => setActiveDetail(a.detailKey)}
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group text-left border-0 cursor-pointer w-full"
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group text-left border-none cursor-pointer"
               >
                 <div className="h-52 overflow-hidden relative">
                   <img
