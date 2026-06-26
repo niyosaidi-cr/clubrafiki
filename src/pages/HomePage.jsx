@@ -14,6 +14,11 @@ function HeroSlider({ navigate }) {
   const prev = () => setCurrent(c => (c - 1 + heroSlides.length) % heroSlides.length)
   const next = () => setCurrent(c => (c + 1) % heroSlides.length)
 
+  const handleLearnMore = () => {
+    console.log('Learn More clicked for program:', heroSlides[current].program)
+    navigate('programs', heroSlides[current].program)
+  }
+
   return (
     <section className="relative h-[85vh] min-h-[520px] overflow-hidden">
       {heroSlides.map((s, i) => (
@@ -34,12 +39,14 @@ function HeroSlider({ navigate }) {
         <div className="flex gap-3 flex-wrap justify-center">
           <button 
             onClick={() => navigate('contact')}
-            className="btn-primary">
+            className="btn-primary"
+            type="button">
             Get Involved
           </button>
           <button 
-            onClick={() => navigate('programs', heroSlides[current].program)}
-            className="btn-outline">
+            onClick={handleLearnMore}
+            className="btn-outline"
+            type="button">
             Learn More
           </button>
         </div>
@@ -49,7 +56,8 @@ function HeroSlider({ navigate }) {
       <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4 pointer-events-none">
         {[prev, next].map((fn, i) => (
           <button key={i} onClick={fn}
-            className="pointer-events-auto w-11 h-11 rounded-full border border-white/30 bg-white/20 backdrop-blur-sm grid place-items-center hover:bg-white/40 transition-colors cursor-pointer">
+            className="pointer-events-auto w-11 h-11 rounded-full border border-white/30 bg-white/20 backdrop-blur-sm grid place-items-center hover:bg-white/40 transition-colors cursor-pointer"
+            type="button">
             <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-white fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
               {i === 0
                 ? <><polyline points="15 18 9 12 15 6"/></>
@@ -65,6 +73,8 @@ function HeroSlider({ navigate }) {
         {heroSlides.map((_, i) => (
           <button key={i} onClick={() => setCurrent(i)}
             className={`w-2 h-2 rounded-full border-0 cursor-pointer transition-all ${i === current ? 'bg-white scale-125' : 'bg-white/40'}`}
+            type="button"
+            aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>
@@ -132,7 +142,8 @@ function ProgramsPreview() {
             <button key={p.id} onClick={() => setActive(i)}
               className={`px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition-all cursor-pointer ${
                 i === active ? 'bg-navy text-white border-navy' : 'bg-white text-muted border-border hover:bg-navy hover:text-white hover:border-navy'
-              }`}>
+              }`}
+              type="button">
               {p.label}
             </button>
           ))}
@@ -182,7 +193,8 @@ function CTACards({ navigate }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c, i) => (
             <button key={i} onClick={() => navigate(c.page)}
-              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0 flex flex-col">
+              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0 flex flex-col"
+              type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-orange fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
                   <path d={c.icon}/>
@@ -231,6 +243,8 @@ function TestimonialsSection() {
             {testimonials.map((_, i) => (
               <button key={i} onClick={() => setCurrent(i)}
                 className={`w-2.5 h-2.5 rounded-full border-0 cursor-pointer transition-colors ${i === current ? 'bg-orange' : 'bg-white/25'}`}
+                type="button"
+                aria-label={`Go to testimonial ${i + 1}`}
               />
             ))}
           </div>
