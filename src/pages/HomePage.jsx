@@ -38,7 +38,7 @@ function HeroSlider({ navigate }) {
             Get Involved
           </button>
           <button 
-            onClick={() => navigate(heroSlides[current].program)}
+            onClick={() => navigate('programs', heroSlides[current].program)}
             className="btn-outline">
             Learn More
           </button>
