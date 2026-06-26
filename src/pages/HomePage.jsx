@@ -3,7 +3,7 @@ import { heroSlides, stats, programs, testimonials } from '../data/siteData'
 import NewsCard from '../components/NewsCard'
 import { news } from '../data/siteData'
 
-function HeroSlider() {
+function HeroSlider({ navigate }) {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
@@ -32,8 +32,16 @@ function HeroSlider() {
         </h1>
         <p className="text-white/90 text-lg max-w-xl mb-8">{heroSlides[current].sub}</p>
         <div className="flex gap-3 flex-wrap justify-center">
-          <button className="btn-primary">Get Involved</button>
-          <button className="btn-outline">Learn More</button>
+          <button 
+            onClick={() => navigate('contact')}
+            className="btn-primary">
+            Get Involved
+          </button>
+          <button 
+            onClick={() => navigate(heroSlides[current].program)}
+            className="btn-outline">
+            Learn More
+          </button>
         </div>
       </div>
 
@@ -235,7 +243,7 @@ function TestimonialsSection() {
 export default function HomePage({ navigate }) {
   return (
     <>
-      <HeroSlider />
+      <HeroSlider navigate={navigate} />
       <StatsBand />
       <PurposeSection />
       <ProgramsPreview />
