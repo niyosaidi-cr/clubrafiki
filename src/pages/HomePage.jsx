@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { heroSlides, stats, programs, testimonials } from '../data/siteData'
+// Consolidating all data imports into a single clean line
+import { heroSlides, stats, programs, testimonials, news } from '../data/siteData'
 import NewsCard from '../components/NewsCard'
-import { news } from '../data/siteData'
 
 function HeroSlider({ navigate }) {
   const [current, setCurrent] = useState(0)
@@ -60,8 +60,8 @@ function HeroSlider({ navigate }) {
             type="button">
             <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-white fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
               {i === 0
-                ? <><polyline points="15 18 9 12 15 6"/></>
-                : <><polyline points="9 18 15 12 9 6"/></>
+                ? <polyline points="15 18 9 12 15 6"/>
+                : <polyline points="9 18 15 12 9 6"/>
               }
             </svg>
           </button>
@@ -193,7 +193,7 @@ function CTACards({ navigate }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c, i) => (
             <button key={i} onClick={() => navigate(c.page)}
-              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0 flex flex-col"
+              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0 flex flex-col w-full"
               type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-orange fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
