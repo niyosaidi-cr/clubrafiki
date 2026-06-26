@@ -7,7 +7,7 @@ export const certificates = [
     title: 'Certificate of Registration',
     issuer: 'Rwanda Governance Board (RGB)',
     year: '2011',
-    description: 'Official registration as a Community-Based Organization by the Rwanda Governance Board, recognizing Club Rafiki as a legitimate non-profit serving the youth of Nyarugenge District.',
+    description: 'Official registration as a Community-Based Organization by the Rwanda Governance Board, recognizing Club Rafiki as a legitimate non-profit serving the youth of Nyarugenge Distric[...]
   },
   {
     img: 'https://picsum.photos/600/420?image=20',
@@ -89,6 +89,13 @@ export const heroSlides = [
     title: 'Where Creativity Meets Community',
     sub: 'Music, fashion, urban dance, and film — creative expression for every young person.',
   },
+  {
+    img: 'https://i.ibb.co/ccb1JwML/Health-pictures.png',
+    tag: 'Health Outreach',
+    program: 'health',
+    title: 'Safeguarding Youth Health & Well-Being',
+    sub: 'Comprehensive health education, HIV prevention, and community wellness programs.',
+  },
 ]
 export const programs = [
   {
@@ -155,12 +162,12 @@ export const testimonials = [
 ]
 
 export const news = [
-  { img: 'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg', tag: 'Education', title: 'New ICT Lab Opens for Youth Training', desc: 'Over 80 students enrolled in our new digital skills program, covering coding, design, and digital entrepreneurship.', date: 'March 2025', read: '3 min read' },
-  { img: 'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg', tag: 'Sports', title: 'Giants of Africa Basketball Camp Returns', desc: 'In partnership with the Giants of Africa foundation, 120 youth participated in the annual basketball camp.', date: 'February 2025', read: '4 min read' },
-  { img: 'https://i.ibb.co/HpYNKtq4/Semester-report-2024-photo.png', tag: 'Empowerment', title: 'Girl Up Leadership Circle — Semester Report', desc: 'Our girls empowerment program graduates 45 young women from leadership and vocational training in 2024.', date: 'January 2025', read: '5 min read' },
-  { img: 'https://i.ibb.co/ccb1JwML/Health-pictures.png', tag: 'Health', title: 'Mobile VCT Campaign Reaches 1,200 in Nyamirambo', desc: 'Our health outreach team conducted a major voluntary HIV testing campaign across 6 neighborhoods.', date: 'December 2024', read: '3 min read' },
-  { img: 'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg', tag: 'Culture', title: 'Annual Cultural Festival Celebrates Rwandan Heritage', desc: 'Our youth performed traditional dance and drama at the 2024 festival, attended by over 500 community members.', date: 'November 2024', read: '4 min read' },
-  { img: 'https://i.ibb.co/PsjqzjV4/Music-2-1.png', tag: 'Arts', title: 'Urban Dance School Performs at Kigali Arena', desc: 'Students from our urban dance school took the stage at Kigali Arena, demonstrating their skills to a packed audience.', date: 'October 2024', read: '2 min read' },
+  { img: 'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg', tag: 'Education', title: 'New ICT Lab Opens for Youth Training', desc: 'Over 80 students enrolled in our new digital skills program, cove[...]
+  { img: 'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg', tag: 'Sports', title: 'Giants of Africa Basketball Camp Returns', desc: 'In partnership with the Giants of Africa foundation, 12[...]
+  { img: 'https://i.ibb.co/HpYNKtq4/Semester-report-2024-photo.png', tag: 'Empowerment', title: 'Girl Up Leadership Circle — Semester Report', desc: 'Our girls empowerment program graduates 45 [...]
+  { img: 'https://i.ibb.co/ccb1JwML/Health-pictures.png', tag: 'Health', title: 'Mobile VCT Campaign Reaches 1,200 in Nyamirambo', desc: 'Our health outreach team conducted a major voluntary HIV [...]
+  { img: 'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg', tag: 'Culture', title: 'Annual Cultural Festival Celebrates Rwandan Heritage', desc: 'Our youth performed traditional dance and drama a[...]
+  { img: 'https://i.ibb.co/PsjqzjV4/Music-2-1.png', tag: 'Arts', title: 'Urban Dance School Performs at Kigali Arena', desc: 'Students from our urban dance school took the stage at Kigali Arena, [...]
 ]
 
 export const impactStats = [
