@@ -8,6 +8,7 @@ export const newsItems = [
     desc: 'Ecobank Rwanda strengthened its community impact by donating computers to Club Rafiki, directly boosting digital literacy opportunities for youth in Nyamirambo.',
     date: 'October 11, 2025',
     read: '3 min read',
+    url: 'https://clubrafiki.com/ecobank-computers-donation/',
   },
   {
     articleId: 'edu-fun-fiesta',
@@ -17,6 +18,7 @@ export const newsItems = [
     desc: 'An exciting educational festival brought together children and youth for a day of interactive learning, games, and creative activities at Club Rafiki.',
     date: 'August 15, 2025',
     read: '4 min read',
+    url: 'https://clubrafiki.com/edu-fun-fiesta/',
   },
   {
     articleId: 'kagame-giants-of-africa',
@@ -26,6 +28,7 @@ export const newsItems = [
     desc: 'President Paul Kagame visited Club Rafiki during the Giants of Africa Basketball Camp, inspiring hundreds of youth and celebrating the power of sport for development.',
     date: 'August 3, 2025',
     read: '5 min read',
+    url: 'https://clubrafiki.com/president-kagame-giants-of-africa/',
   },
   {
     articleId: 'rba-iwacu-talents',
@@ -35,6 +38,7 @@ export const newsItems = [
     desc: 'In partnership with RBA_Iwacu, Club Rafiki hosted a talent showcase where young people demonstrated skills in dance, music, art, and sports to a packed audience.',
     date: 'July 23, 2025',
     read: '4 min read',
+    url: 'https://clubrafiki.com/talent-showcase-rba-iwacu/',
   },
   {
     articleId: 'girl-up-2024',
@@ -44,6 +48,7 @@ export const newsItems = [
     desc: 'Our girls empowerment program graduated 45 young women from leadership and vocational training, marking another successful year for the Girl Up initiative.',
     date: 'January 2025',
     read: '5 min read',
+    url: 'https://clubrafiki.com/girl-up-2024-report/',
   },
   {
     articleId: 'vct-campaign-2024',
@@ -53,13 +58,14 @@ export const newsItems = [
     desc: 'Our health outreach team conducted a major voluntary HIV testing campaign across 6 neighborhoods, making life-saving services accessible to the community.',
     date: 'December 2024',
     read: '3 min read',
+    url: 'https://clubrafiki.com/mobile-vct-campaign-2024/',
   },
 ]
 
 // ─── PUBLICATIONS ────────────────────────────────────────────────────────────
 
 export const progressReports = [
-  { title: 'Annual Report 2025–2026', year: '2026', img: 'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg', url: 'https://clubrafiki.com/wp-content/uploads/2026/06/F-Annual-Report-2026-copy_compressed.pdf' },
+  { title: 'Annual Report 2025–2026', year: '2026', img: 'https://i.ibb.co/PsjqzjV4/Music-2-1.png', url: 'https://clubrafiki.com/wp-content/uploads/2026/06/F-Annual-Report-2026-copy_compressed.pdf' },
   { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.pdf' },
   { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023.pdf' },
   { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.files.wordpress.com/2022/05/annual-report-2021-2022.pdf' },
