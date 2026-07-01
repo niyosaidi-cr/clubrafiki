@@ -1,4 +1,4 @@
-// ─── NEWS & EVENTS ───────────────────────────────────────────────────────────
+// ─── NEWS & EVENTS ────────────────────────────────────────────────────────────
 export const newsItems = [
   {
     articleId: 'ecobank-computers',
@@ -56,32 +56,33 @@ export const newsItems = [
   },
 ]
 
-// ─── PUBLICATIONS ─────────────────────────────────────────────────────────────
+// ─── PUBLICATIONS ────────────────────────────────────────────────────────────
 
 export const progressReports = [
-  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2024/07/Rafiki-2024-FINAL-2_compressed-1.pdf' },
-  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2023/08/Club-Rafiki-Annual-report-2022_23-thanks-1.pdf' },
-  { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.files.wordpress.com/2022/08/new-report-big_compressed.pdf' },
-  { title: 'Annual Report 2020–2021', year: '2021', img: 'https://clubrafiki.files.wordpress.com/2021/07/annually-report-2020-2021-pic.png', url: 'https://clubrafiki.files.wordpress.com/2021/08/final-rafiki-report-f-1.pdf' },
-  { title: 'Semi-Annual Report July–Dec 2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/quarterly-report-oct-to-dec-2020.png', url: 'https://clubrafiki.files.wordpress.com/2021/02/narrative-report-semester-2_2020.pdf' },
-  { title: 'Youth Opinions on COVID-19 in Rwanda', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2020/12/report-cover.jpg', url: 'https://clubrafiki.files.wordpress.com/2020/12/club-rafiki_covid19_-report.pdf' },
-  { title: 'Annual Report 2019–2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2019_20-2.png', url: 'https://clubrafiki.files.wordpress.com/2020/08/club-rafiki-report-2019-2020-22-final_compressed.pdf' },
-  { title: 'Semi-Annual Report July–Dec 2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/semester-two_2018.png', url: 'https://clubrafiki.files.wordpress.com/2019/03/narrative-report_indigo-foundation-semester-two-2018-.pdf' },
-  { title: 'Annual Report 2017–2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2017_18.png', url: 'https://clubrafiki.files.wordpress.com/2018/08/club-rafiki_annual-report-2017_18.pdf' },
-  { title: 'Annual Report 2016–2017', year: '2017', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2016_17.png', url: 'https://clubrafiki.files.wordpress.com/2017/11/club-rafiki_annual-report-2016_171.pdf' },
-  { title: 'Annual Report 2014–2015', year: '2015', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2014-2015.png', url: 'https://clubrafiki.files.wordpress.com/2014/09/annual-report-mtmh-final.pdf' },
-  { title: 'Evaluation Report', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2018/10/report2018-fn-01.jpg', url: 'https://clubrafiki.files.wordpress.com/2018/08/evaluation-report-rafikicr-report-edited-by-prisca-and-tony.pdf' },
+  { title: 'Annual Report 2025–2026', year: '2026', img: 'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg', url: 'https://clubrafiki.com/wp-content/uploads/2026/06/F-Annual-Report-2026-copy_compressed.pdf' },
+  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.pdf' },
+  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: 'https://clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023.pdf' },
+  { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.files.wordpress.com/2022/05/annual-report-2021-2022.pdf' },
+  { title: 'Annual Report 2020–2021', year: '2021', img: 'https://clubrafiki.files.wordpress.com/2021/07/annually-report-2020-2021-pic.png', url: 'https://clubrafiki.files.wordpress.com/2021/08/annual-report-2020-2021.pdf' },
+  { title: 'Semi-Annual Report July–Dec 2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/quarterly-report-oct-to-dec-2020.png', url: 'https://clubrafiki.files.wordpress.com/2021/01/semi-annual-report-2020.pdf' },
+  { title: 'Youth Opinions on COVID-19 in Rwanda', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2020/12/report-cover.jpg', url: 'https://clubrafiki.files.wordpress.com/2020/12/club-rafiki-covid-19-report.pdf' },
+  { title: 'Annual Report 2019–2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2019_20-2.png', url: 'https://clubrafiki.files.wordpress.com/2020/08/annual-report-2019-2020.pdf' },
+  { title: 'Semi-Annual Report July–Dec 2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/semester-two_2018.png', url: 'https://clubrafiki.files.wordpress.com/2019/03/narrative-report-2018.pdf' },
+  { title: 'Annual Report 2017–2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2017_18.png', url: 'https://clubrafiki.files.wordpress.com/2018/08/annual-report-2017-2018.pdf' },
+  { title: 'Annual Report 2016–2017', year: '2017', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2016_17.png', url: 'https://clubrafiki.files.wordpress.com/2017/11/annual-report-2016-2017.pdf' },
+  { title: 'Annual Report 2014–2015', year: '2015', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2014-2015.png', url: 'https://clubrafiki.files.wordpress.com/2014/09/annual-report-2014-2015.pdf' },
+  { title: 'Evaluation Report', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2018/10/report2018-fn-01.jpg', url: 'https://clubrafiki.files.wordpress.com/2018/08/evaluation-report-rafiki.pdf' },
 ]
 
 export const rafikiBooksJournals = {
   books: [
-    { title: 'Winyangiriza Ejo', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', desc: 'A story about family, abuse, and the consequences of harmful behavior in the community.', url: 'https://clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1.pdf', year: '2025' },
-    { title: 'COVID-19 Legacy', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', desc: 'Youth reflections on life, resilience, and community during and after the pandemic.', url: 'https://clubrafiki.com/wp-content/uploads/2024/01/Rafiki-Book-Covid19-Legacy.pdf', year: '2024' },
-    { title: 'Our Life in Our Family', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/12/Book-cover.jpg?resize=1292%2C863&ssl=1', desc: 'Stories from Club Rafiki youth about family life, values, and growing up.', url: 'https://clubrafiki.com/wp-content/uploads/2023/12/Rafiki-booklet-v3.pdf', year: '2023' },
-    { title: 'Shining Dreams', img: 'https://clubrafiki.files.wordpress.com/2021/03/shinning-dreams.jpg', desc: 'An inspiring collection of stories and dreams written by youth in the English Corner program.', url: 'https://clubrafiki.files.wordpress.com/2020/01/ecw-book-2-final.pdf', year: '2020' },
-    { title: 'COVID-19 Outbreak', img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.', url: 'https://clubrafiki.files.wordpress.com/2020/10/booklet-outbreak.pdf', year: '2020' },
-    { title: 'Rise of Hope', img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', desc: 'The debut book written by English Corner students — a testament to their growth in literacy.', url: 'https://clubrafiki.files.wordpress.com/2019/03/ecw-book.pdf', year: '2019' },
-    { title: 'Jambo Sadness', img: 'https://clubrafiki.files.wordpress.com/2021/03/jambos-sadness.jpg', desc: 'A story exploring emotions, challenges, and the hope found in community support.', url: 'https://clubrafiki.files.wordpress.com/2020/02/jambo-march-2019.pdf', year: '2019' },
+    { title: 'Winyangiriza Ejo', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', desc: 'A story about family, abuse, and resilience written by Club Rafiki youth.', year: '2025', url: 'https://clubrafiki.com/books/winyangiriza-ejo/' },
+    { title: 'COVID-19 Legacy', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', desc: 'Youth reflections on life, resilience, and hope during the pandemic.', year: '2024', url: 'https://clubrafiki.com/books/covid-19-legacy/' },
+    { title: 'Our Life in Our Family', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/12/Book-cover.jpg?resize=1292%2C863&ssl=1', desc: 'Stories from Club Rafiki youth about family, community, and belonging.', year: '2023', url: 'https://clubrafiki.com/books/our-life-in-our-family/' },
+    { title: 'Shining Dreams', img: 'https://clubrafiki.files.wordpress.com/2021/03/shinning-dreams.jpg', desc: 'An inspiring collection of stories and dreams written by youth in the English Corner.', year: '2021', url: 'https://clubrafiki.files.wordpress.com/2021/03/shining-dreams.pdf' },
+    { title: 'COVID-19 Outbreak', img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.', year: '2020', url: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.pdf' },
+    { title: 'Rise of Hope', img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', desc: 'The debut book written by English Corner students — a testament to their growth in literacy.', year: '2019', url: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.pdf' },
+    { title: 'Jambo Sadness', img: 'https://clubrafiki.files.wordpress.com/2021/03/jambos-sadness.jpg', desc: 'A story exploring emotions, challenges, and the hope found in community support.', year: '2018', url: 'https://clubrafiki.files.wordpress.com/2021/03/jambo-sadness.pdf' },
   ],
   journals: [
     { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.files.wordpress.com/2018/06/rafiki-journal-special.pdf', year: '2018' },
