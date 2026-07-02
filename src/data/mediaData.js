@@ -1,4 +1,4 @@
-// ─── NEWS & EVENTS ────────────────────────────────────────────────────────────
+// ─── NEWS & EVENTS ───────────────────────────────────────────────────────────
 export const newsItems = [
   {
     articleId: 'ecobank-computers',
@@ -41,16 +41,6 @@ export const newsItems = [
     url: 'https://clubrafiki.org/news/talent-showcase-rba-iwacu/',
   },
   {
-    articleId: 'girl-up-2024',
-    img: 'https://i.ibb.co/HpYNKtq4/Semester-report-2024-photo.png',
-    tag: 'Empowerment',
-    title: 'Girl Up Leadership Circle — 2024 Semester Report',
-    desc: 'Our girls empowerment program graduated 45 young women from leadership and vocational training, marking another successful year for the Girl Up initiative.',
-    date: 'January 2025',
-    read: '5 min read',
-    url: 'https://clubrafiki.org/news/girl-up-2024-report/',
-  },
-  {
     articleId: 'vct-campaign-2024',
     img: 'https://i.ibb.co/ccb1JwML/Health-pictures.png',
     tag: 'Health',
@@ -62,7 +52,7 @@ export const newsItems = [
   },
 ]
 
-// ─── PUBLICATIONS ────────────────────────────────────────────────────────────
+// ─── PUBLICATIONS ───────────────────────────────────────────────────────────
 
 export const progressReports = [
   { title: 'Annual Report 2025–2026', year: '2026', img: 'https://live.staticflickr.com/65535/54686457129_fbb8f028a2_n.jpg', url: 'https://clubrafiki.org/reports/annual-report-2025-2026/' },
@@ -82,13 +72,13 @@ export const progressReports = [
 
 export const rafikiBooksJournals = {
   books: [
-    { title: 'Winyangiriza Ejo', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', desc: 'A story about family, abuse, and resilience written by Club Rafiki youth.', year: '2025', url: 'https://clubrafiki.org/books/winyangiriza-ejo/' },
-    { title: 'COVID-19 Legacy', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', desc: 'Youth reflections on life, resilience, and hope during the pandemic.', year: '2024', url: 'https://clubrafiki.org/books/covid-19-legacy/' },
-    { title: 'Our Life in Our Family', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/12/Book-cover.jpg?resize=1292%2C863&ssl=1', desc: 'Stories from Club Rafiki youth about family, community, and belonging.', year: '2023', url: 'https://clubrafiki.org/books/our-life-in-our-family/' },
-    { title: 'Shining Dreams', img: 'https://clubrafiki.files.wordpress.com/2021/03/shinning-dreams.jpg', desc: 'An inspiring collection of stories and dreams written by youth in the English Corner.', year: '2021', url: 'https://clubrafiki.org/books/shining-dreams/' },
-    { title: 'COVID-19 Outbreak', img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.', year: '2020', url: 'https://clubrafiki.org/books/covid-19-outbreak/' },
-    { title: 'Rise of Hope', img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', desc: 'The debut book written by English Corner students — a testament to their growth in literacy.', year: '2019', url: 'https://clubrafiki.org/books/rise-of-hope/' },
-    { title: 'Jambo Sadness', img: 'https://clubrafiki.files.wordpress.com/2021/03/jambos-sadness.jpg', desc: 'A story exploring emotions, challenges, and the hope found in community support.', year: '2018', url: 'https://clubrafiki.org/books/jambo-sadness/' },
+    { title: 'Winyangiriza Ejo', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', desc: 'A story about family, abuse, and resilience told through the eyes of youth.' },
+    { title: 'COVID-19 Legacy', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', desc: 'Youth reflections on life, resilience, and hope during the pandemic.' },
+    { title: 'Our Life in Our Family', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/12/Book-cover.jpg?resize=1292%2C863&ssl=1', desc: 'Stories from Club Rafiki youth about family, community, and personal growth.' },
+    { title: 'Shining Dreams', img: 'https://clubrafiki.files.wordpress.com/2021/03/shinning-dreams.jpg', desc: 'An inspiring collection of stories and dreams written by youth in the English Corner.' },
+    { title: 'COVID-19 Outbreak', img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.' },
+    { title: 'Rise of Hope', img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', desc: 'The debut book written by English Corner students — a testament to their growth in literacy.' },
+    { title: 'Jambo Sadness', img: 'https://clubrafiki.files.wordpress.com/2021/03/jambos-sadness.jpg', desc: 'A story exploring emotions, challenges, and the hope found in community support.' },
   ],
   journals: [
     { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-special/', year: '2018' },
