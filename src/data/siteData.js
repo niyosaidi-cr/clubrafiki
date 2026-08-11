@@ -36,13 +36,6 @@ export const certificates = [
     issuer: 'KOICA Rwanda',
     year: '2024',
     description: 'Certificate of appreciation in acknolodgement of the best cooperative institution.'
-  },
-  {
-    img: 'https://picsum.photos/600/420?image=60',
-    title: 'Health Outreach Excellence',
-    issuer: 'Rwanda Biomedical Centre',
-    year: '2023',
-    description: 'Awarded for outstanding contribution to HIV prevention and voluntary counseling & testing outreach, reaching over 1,200 individuals across six Nyamirambo neighborhoods.'
   }
 ];
 
@@ -245,4 +238,3 @@ export const galleryImages = [
   'https://live.staticflickr.com/65535/54685386307_d232e97183_z.jpg',
   'https://live.staticflickr.com/65535/54686447209_7a27a6f27b_w.jpg'
 ];
-
