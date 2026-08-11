@@ -40,10 +40,10 @@ export const certificates = [
 ];
 
 export const stats = [
-  { value: '5,000+', label: 'Youth Reached Annually' },
+  { value: '500,000+', label: 'Youth Reached Annually' },
   { value: '50+',    label: 'Years of Service' },
-  { value: '500+',   label: 'Youth Trained in ICT' },
-  { value: '1,000+', label: 'Youth in Sports Programs' }
+  { value: '1400+',   label: 'Youth Trained in ICT' },
+  { value: '100,000+', label: 'Youth in Sports Programs' }
 ];
 
 export const heroSlides = [
