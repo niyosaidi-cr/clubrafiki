@@ -10,32 +10,32 @@ export const certificates = [
     description: 'Official registration as a Community-Based Organization by the Rwanda Governance Board, recognizing Club Rafiki as a legitimate non-profit serving the youth of Nyarugenge Distric...'
   },
   {
-    img: 'https://picsum.photos/600/420?image=20',
-    title: 'Youth Empowerment Excellence Award',
-    issuer: 'Ministry of Youth & ICT, Rwanda',
-    year: '2019',
-    description: 'Awarded in recognition of outstanding contribution to youth empowerment and skills development across Nyamirambo community over multiple decades.'
-  },
-  {
-    img: 'https://picsum.photos/600/420?image=30',
-    title: 'Community Impact Certificate',
+    img: '/assets/certificate-ecw.jpg',
+    title: 'English Corner Workshop certificate of Participation',
     issuer: 'City of Kigali',
-    year: '2020',
-    description: 'Recognized by the City of Kigali for sustained community impact through sports, education, and health outreach programs benefiting over 5,000 youth annually.'
+    year: '2017',
+    description: 'Awarded in gratitude for outstanding participation and hard work during the Intore mu biruhuko program.'
   },
   {
-    img: 'https://picsum.photos/600/420?image=40',
-    title: 'Giants of Africa Partnership Award',
-    issuer: 'Giants of Africa Foundation',
-    year: '2021',
-    description: 'Honored as a founding partner of the Giants of Africa basketball development program in Rwanda, contributing to youth sports and leadership development.'
+    img: '/assets/certificate-urban-dance.jpg',
+    title: 'Urban Dance School certificate of Participation',
+    issuer: 'City of Kigali',
+    year: '2017',
+    description: 'Awarded in gratitude for outstanding participation and hard work during the Intore mu biruhuko program.'
   },
   {
-    img: 'https://picsum.photos/600/420?image=50',
-    title: 'Girls Empowerment Recognition',
-    issuer: 'UN Women Rwanda',
-    year: '2022',
-    description: 'Certificate of recognition for the Girl Up program\'s impact on girls\' leadership, vocational training, and rights advocacy in Nyamirambo.'
+    img: '/assets/certificate-club-rafiki-library.jpg',
+    title: 'certificate of participation',
+    issuer: 'MINISPOC',
+    year: '2018',
+    description: 'Awarded in recognition of our participation to the Literacy Week.'
+  },
+  {
+    img: '/assets/Koica-Certificate-of-appreciation.jpg',
+    title: 'Certificate of Appreciation',
+    issuer: 'KOICA Rwanda',
+    year: '2024',
+    description: 'Certificate of appreciation in acknolodgement of the best cooperative institution.'
   },
   {
     img: 'https://picsum.photos/600/420?image=60',
