@@ -3,7 +3,7 @@
 // When Decap CMS is set up, this will be editable from the admin panel.
 export const certificates = [
   {
-    img: 'https://picsum.photos/600/420?image=10',
+    img: '/assets/Club Rafiki RGB Certificate.jpg',
     title: 'Certificate of Registration',
     issuer: 'Rwanda Governance Board (RGB)',
     year: '2011',
@@ -245,3 +245,4 @@ export const galleryImages = [
   'https://live.staticflickr.com/65535/54685386307_d232e97183_z.jpg',
   'https://live.staticflickr.com/65535/54686447209_7a27a6f27b_w.jpg'
 ];
+
