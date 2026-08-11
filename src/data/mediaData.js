@@ -98,14 +98,14 @@ export const rafikiBooksJournals = {
     { title: 'Inshuti No. 24', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-24.jpg', url: 'https://clubrafiki.org/journals/inshuti-24/', year: '2018' },
   ],
   ebooks: [
-    { title: 'REB Pre-Primary School Books', url: 'https://reb.rw/main-menu/resources/pre-primary-school-books/', icon: 'book-open' },
-    { title: 'REB Primary School Books', url: 'https://reb.rw/main-menu/resources/primary-school-books/', icon: 'book-open' },
-    { title: 'REB Secondary School Books', url: 'https://reb.rw/main-menu/resources/secondary-school-books/', icon: 'book-open' },
-    { title: 'Kigali Public Library (Overdrive)', url: 'https://kplonline.overdrive.com/browse', icon: 'library' },
+    { title: 'REB Pre-Primary School Books', url: 'https://elearning.reb.rw/?category=15&redirect=0', icon: 'book-open' },
+    { title: 'REB Primary School Books', url: 'https://elearning.reb.rw/?category=19&redirect=0', icon: 'book-open' },
+    { title: 'REB Secondary School Books', url: 'https://elearning.reb.rw/?category=13&redirect=0', icon: 'book-open' },
+    { title: 'Kigali Public Library (Overdrive)', url: 'https://kplonline.overdrive.com', icon: 'library' },
     { title: 'African Storybook', url: 'https://africanstorybook.org/', icon: 'book-open' },
     { title: 'Digital Library', url: 'https://digitallibrary.io/', icon: 'monitor' },
     { title: 'Free Children\'s Stories', url: 'https://www.freechildrenstories.com/', icon: 'book-open' },
-    { title: 'WDA TVET E-Learning (YouTube)', url: 'https://www.youtube.com/channel/UClIF3TNK8Y8OXrODK42nI2Q', icon: 'book-open' },
+    { title: 'WDA TVET E-Learning (YouTube)', url: 'https://www.elearning.rtb.gov.rw/?category=164&redirect=0', icon: 'book-open' },
   ],
 }
 
