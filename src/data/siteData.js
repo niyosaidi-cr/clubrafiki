@@ -202,9 +202,9 @@ export const news = [
 
 export const impactStats = [
   { number: '50+', label: 'Years Serving Kigali Youth' },
-  { number: '5,000+', label: 'Youth Reached Each Year' },
+  { number: '500,000+', label: 'Youth Reached Each Year' },
   { number: '500+', label: 'Youth Trained in ICT' },
-  { number: '1,000+', label: 'Active Sports Participants' },
+  { number: '14,000+', label: 'Active Sports Participants' },
   { number: '45+', label: 'Girl Up Graduates (2024)' },
   { number: '6', label: 'Neighborhoods Reached by VCT' },
   { number: '1,200+', label: 'HIV Tests Conducted' },
