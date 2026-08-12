@@ -232,9 +232,9 @@ export const programDetails = {
     },
 
     photos: [
-      'https://i.ibb.co/PsjqzjV4/Music-2-1.png',
-      'public/assets/Images/Music classroom.jpg',
-      'public/assets/Images/Urban dance on dancefloor.jpg',
+      '/assets/Images/Music classroom.jpg',
+      '/assets/Images/VCT Tailoring (1).jpg',
+      '/assets/Images/Urban dance on dancefloor.jpg',
     ],
 
     getInvolvedText: 'Support creative youth by sponsoring a student\'s music or dance training, volunteering as a mentor, or donating instruments and art supplies to our center.',
@@ -312,8 +312,8 @@ export const programDetails = {
 
     photos: [
       'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg',
-      'https://picsum.photos/600/400?image=1015',
-      'https://picsum.photos/600/400?image=1032',
+      '/assets/Images/Social civic.jpg',
+      '/assets/Images/art.jpg',
     ],
 
     getInvolvedText: 'Donate books to our library, volunteer as a reading mentor, or partner with us to expand cultural education programs that preserve Rwandan heritage for the next generation.',
@@ -402,8 +402,8 @@ export const programDetails = {
 
     photos: [
       'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg',
-      'https://picsum.photos/600/400?image=1038',
-      'https://picsum.photos/600/400?image=1041',
+      '/assets/Images/ICT classroom.jpg',
+      '/assets/Images/Fashion.jpg',
     ],
 
     getInvolvedText: 'Volunteer as a language or ICT trainer, donate computers or equipment, or sponsor a youth through a full semester of skills training at Club Rafiki.',
