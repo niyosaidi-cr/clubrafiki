@@ -46,7 +46,7 @@ function CertCard({ cert, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="group bg-white rounded-xl overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all text-left border-0 cursor-pointer w-full"
+      className="group bg-white rounded-xl overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all text-left border-0 cursor-pointer"
     >
       <div className="relative h-28 overflow-hidden bg-cream">
         <img
@@ -82,13 +82,31 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <img src="https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/54697022511_d738c63433_c.jpg?strip=info&w=675&ssl=1" alt="Youth at Club Rafiki" className="rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)]" />
+            <img src="https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/54697022511_d738c63433_c.jpg?strip=info&w=675&ssl=1" alt="Youth at Club Rafiki" className="rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)]" />
             <div>
               <h2 className="font-display text-3xl text-dark mb-5">Our Story</h2>
               <p className="text-muted leading-loose mb-4">Our journey began in <strong className="text-dark">1974</strong>, founded by the Congregation of Dominican Fathers. By 1976, on land granted by the government, we established our core infrastructure — a library, a main hall, and basketball and volleyball courts.</p>
               <p className="text-muted leading-loose mb-4">We were officially granted not-for-profit status in 1978, with further expansion of our facilities in 1980 and 1986.</p>
               <p className="text-muted leading-loose mb-4"><strong className="text-dark">Tragically, during the 1994 Genocide against the Tutsi, most of our facilities were looted and demolished.</strong> Yet from the ashes, Club Rafiki rose again — committed to rebuilding not just structures, but the very fabric of our community through peace-building and reconciliation.</p>
               <p className="text-muted leading-loose">On April 18, 2011, we were officially registered as a community-based organization by the Rwanda Governance Board (RGB). Today our work centers on empowering youth of Nyarugenge District through a wide array of programs.</p>
+
+              {/* Profile download CTA */}
+              <div className="mt-6">
+                <a
+                  href="/assets/Pdfs/Club-Rafiki-profile-Final_compressed.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-orange text-white rounded-full px-6 py-3 font-semibold shadow hover:bg-orange-dark transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  <span>Download our profile (PDF)</span>
+                </a>
+                <p className="text-muted text-sm mt-2">Open the Club Rafiki profile in a new tab to learn more about our history, programs, and impact.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +124,7 @@ export default function AboutPage() {
               <h3 className="font-display text-2xl text-dark mb-5">Vision & Mission</h3>
               <div className="mb-6">
                 <h4 className="text-navy font-bold mb-2">Our Vision</h4>
-                <p className="text-muted leading-relaxed">To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.</p>
+                <p className="text-muted leading-relaxed">To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development of their families and communities.</p>
               </div>
               <div>
                 <h4 className="text-green font-bold mb-2">Our Mission</h4>
@@ -161,7 +179,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="text-center text-muted/50 text-xs mt-8 italic">
-            Click any certificate to view details &nbsp;·&nbsp; Replace placeholder content in <code className="bg-cream px-1 rounded">src/data/siteData.js</code>
+            Click any certificate to view details · Replace placeholder content in <code className="bg-cream px-1 rounded">src/data/siteData.js</code>
           </p>
         </div>
       </section>
