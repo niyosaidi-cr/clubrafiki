@@ -149,8 +149,8 @@ export const programDetails = {
 
     photos: [
       'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg',
-      'https://picsum.photos/600/400?image=1040',
-      'https://picsum.photos/600/400?image=1031',
+      '/assets/Images/Badminton.jpg',
+      '/assets/Images/Boxing.jpg',
     ],
 
     getInvolvedText: 'Join our sports programs as a participant, coach, or sponsor. Help us maintain facilities, provide equipment, and give more youth the transformative experience of structured sport.',
