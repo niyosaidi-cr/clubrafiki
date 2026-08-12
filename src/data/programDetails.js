@@ -75,7 +75,7 @@ export const programDetails = {
 
     photos: [
       'https://i.ibb.co/ccb1JwML/Health-pictures.png',
-      'https://picsum.photos/600/400?image=1042',
+      '/assets/Images/SRHR Out reach.jpg',
       'https://picsum.photos/600/400?image=1043',
     ],
 
@@ -148,7 +148,7 @@ export const programDetails = {
     },
 
     photos: [
-      'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg',
+      '/assets/Images/Basketball Dunk.jpg',
       '/assets/Images/Badminton.jpg',
       '/assets/Images/Boxing.jpg',
     ],
@@ -233,8 +233,8 @@ export const programDetails = {
 
     photos: [
       'https://i.ibb.co/PsjqzjV4/Music-2-1.png',
-      'https://picsum.photos/600/400?image=1044',
-      'https://picsum.photos/600/400?image=1047',
+      'public/assets/Images/Music classroom.jpg',
+      'public/assets/Images/Urban dance on dancefloor.jpg',
     ],
 
     getInvolvedText: 'Support creative youth by sponsoring a student\'s music or dance training, volunteering as a mentor, or donating instruments and art supplies to our center.',
