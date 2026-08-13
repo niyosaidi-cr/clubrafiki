@@ -14,6 +14,46 @@ export default function Footer({ navigate }) {
     }
   }
 
+  // Social media links with complete SVG paths
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      href: 'https://www.facebook.com/profile.php?id=100082086220538',
+      icon: 'facebook',
+      d: 'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'
+    },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/clubrafikiyouth/',
+      icon: 'instagram',
+      isInstagram: true
+    },
+    {
+      name: 'Flickr',
+      href: 'https://www.flickr.com/photos/194412004@N05',
+      icon: 'flickr',
+      d: 'M6.5 0A6.5 6.5 0 0 0 0 6.5v11A6.5 6.5 0 0 0 6.5 24h11a6.5 6.5 0 0 0 6.5-6.5v-11A6.5 6.5 0 0 0 17.5 0h-11zM5.5 7a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z'
+    },
+    {
+      name: 'YouTube',
+      href: 'https://www.youtube.com/@clubrafiki4198',
+      icon: 'youtube',
+      d: 'M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'
+    },
+    {
+      name: 'X (Twitter)',
+      href: 'https://x.com/yegoclubrafiki',
+      icon: 'twitter',
+      d: 'M23.953 4.57a10 10 0 002.856-3.915 10 10 0 01-2.856.973 5.001 5.001 0 00-8.533 4.57 14.007 14.007 0 01-10.147-5.134 5 5 0 001.548 6.686 5.04 5.04 0 01-2.267-.616v.06a5 5 0 004.009 4.905 5 5 0 01-2.263.084 5.001 5.001 0 004.674 3.476 10.007 10.007 0 01-6.177 2.135c-.398 0-.779-.023-1.17-.067a14.047 14.047 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A10.025 10.025 0 0024 4.59z'
+    },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/club-rafiki-926267341/',
+      icon: 'linkedin',
+      d: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z'
+    }
+  ]
+
   return (
     <footer className="bg-dark text-white pt-16 pb-8">
       <div className="max-w-[1200px] mx-auto px-6">
@@ -31,23 +71,32 @@ export default function Footer({ navigate }) {
             <p className="text-white/55 text-sm leading-relaxed mb-5">
               Empowering children and youth of Nyamirambo, Kigali since 1974 — training, informing, framing, and equipping the next generation.
             </p>
-            <div className="flex gap-3">
-              {[
-                { href: 'https://www.facebook.com/clubrafikicentre', d: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z' },
-                { href: 'https://www.instagram.com/club_rafiki/', d: null, isInstagram: true },
-                { href: 'https://x.com/yegoclubrafiki', d: 'M18 2h-3a1 1 0 0 0-1 1v2h-2V3a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-9h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z M4 3l3.56 8.46L4 20h3l2.44-4.08L13 20h3L9.44 11.54 13 3h-3l-2.44 4.08L7 3H4z' },
-              ].map((s, i) => (
-                <a key={i} href={s.href} target="_blank" rel="noreferrer"
-                  className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-orange transition-colors">
-                  <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-white fill-none stroke-2">
-                    {s.isInstagram ? (
+            {/* Social Media Icons */}
+            <div className="flex gap-3 flex-wrap">
+              {socialLinks.map((social, i) => (
+                <a
+                  key={i}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={social.name}
+                  className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-orange transition-colors duration-300 hover:scale-110"
+                  aria-label={`Follow us on ${social.name}`}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    {social.isInstagram ? (
                       <>
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" strokeWidth="1.5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" strokeWidth="1.5"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="white"/>
                       </>
                     ) : (
-                      <path d={s.d} fill="white" stroke="none"/>
+                      <path d={social.d} fill="white"/>
                     )}
                   </svg>
                 </a>
@@ -82,7 +131,7 @@ export default function Footer({ navigate }) {
               <li>
                 <button onClick={openPartner} className="text-white/55 hover:text-orange text-sm transition-colors bg-transparent border-0 cursor-pointer p-0">Partner With Us</button>
               </li>
-              <li><a href="https://flickr.com/photos/194412004@N05/" target="_blank" rel="noreferrer" className="text-white/55 hover:text-orange text-sm transition-colors">Flickr Channel</a></li>
+              <li><a href="https://www.flickr.com/photos/194412004@N05" target="_blank" rel="noreferrer" className="text-white/55 hover:text-orange text-sm transition-colors">Flickr Channel</a></li>
               <li><a href="https://www.youtube.com/@clubrafiki4198" target="_blank" rel="noreferrer" className="text-white/55 hover:text-orange text-sm transition-colors">YouTube Channel</a></li>
             </ul>
           </div>
