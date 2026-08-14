@@ -233,7 +233,7 @@ export const programDetails = {
 
     photos: [
       '/assets/Images/Music classroom.jpg',
-      '/assets/Images/VCT Tailoring (1).jpg',
+      '/assets/Images/Fashion.jpg',
       '/assets/Images/Urban dance on dancefloor.jpg',
     ],
 
@@ -311,7 +311,7 @@ export const programDetails = {
     },
 
     photos: [
-      'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg',
+      '/assets/Images/Traditional dance.jpg',
       '/assets/Images/Social civic.jpg',
       '/assets/Images/art.jpg',
     ],
@@ -403,7 +403,7 @@ export const programDetails = {
     photos: [
       'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg',
       '/assets/Images/ICT classroom.jpg',
-      '/assets/Images/Fashion.jpg',
+      '/assets/Images/VCT Tailoring (1).jpg',
     ],
 
     getInvolvedText: 'Volunteer as a language or ICT trainer, donate computers or equipment, or sponsor a youth through a full semester of skills training at Club Rafiki.',
@@ -480,9 +480,9 @@ export const programDetails = {
     },
 
     photos: [
-      'https://i.ibb.co/HpYNKtq4/Semester-report-2024-photo.png',
-      'https://picsum.photos/600/400?image=1027',
-      'https://picsum.photos/600/400?image=1005',
+      '/assets/Images/Girls empowerment.jpg',
+      '/assets/Images/Girls empowerment 2.jpg',
+      '/assets/Images/Girls empowerment 3.jpg',
     ],
 
     getInvolvedText: 'Sponsor a girl\'s participation in the empowerment program, volunteer as a mentor, or donate to fund vocational training that gives girls lasting economic independence.',
