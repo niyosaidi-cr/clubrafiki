@@ -3,6 +3,12 @@ import { useState, useEffect } from 'react'
 import { heroSlides, stats, programs, testimonials, news } from '../data/siteData'
 import NewsCard from '../components/NewsCard'
 
+const newsTagColors = {
+  'Latest News':  'bg-orange-light text-orange',
+  'Empowerment':  'bg-purple-100 text-purple-700',
+  'Health':       'bg-red-100 text-red-700',
+}
+
 function HeroSlider({ navigate }) {
   const [current, setCurrent] = useState(0)
 
@@ -110,8 +116,8 @@ function PurposeSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {[
-            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'border-orange' },
-            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy' },
+            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'bo[...]'},
+            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy'[...]},
           ].map((c, i) => (
             <div key={i} className={`bg-white rounded-2xl p-9 border-t-4 ${c.border} shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-transform`}>
               <h3 className="font-display text-2xl text-dark mb-3">{c.title}</h3>
@@ -177,9 +183,9 @@ function ProgramsPreview() {
 
 function CTACards({ navigate }) {
   const cards = [
-    { icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', title: 'Join a Program', desc: 'From coding to karate, discover your passion and find your community.', link: 'Learn More', page: 'programs' },
-    { icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 7a4 4 0 1 0 0 8 4 4 0 0 0 0-8z', title: 'Volunteer', desc: 'Share your skills, time, and passion to inspire the next generation.', link: 'Get Involved', page: 'contact' },
-    { icon: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z', title: 'Donate', desc: 'Your gift provides a safe space and real opportunities for youth to thrive.', link: 'Give Now', page: 'donate' },
+    { icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', title: 'Join a Program', desc: 'From coding to karate, discover your passion and find your community.', link: 'Learn More', page: 'progr[...]'},
+    { icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 7a4 4 0 1 0 0 8 4 4 0 0 0 0-8z', title: 'Volunteer', desc: 'Share your skills, time, an[...]'},
+    { icon: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z', title: 'Donate', desc: 'Your gift provides [...]'},
     { icon: 'M3 4h18v18H3zM16 2v4M8 2v4M3 10h18', title: 'Upcoming Events', desc: 'Join us for festivals, competitions, workshops and community gatherings.', link: 'See Events', page: 'news' },
   ]
 
@@ -193,7 +199,7 @@ function CTACards({ navigate }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c, i) => (
             <button key={i} onClick={() => navigate(c.page)}
-              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0 flex flex-col w-full"
+              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer bor[...]"
               type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-orange fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
@@ -262,15 +268,55 @@ export default function HomePage({ navigate }) {
       <PurposeSection />
       <ProgramsPreview />
       <CTACards navigate={navigate} />
-      {/* News Preview */}
+      {/* News Preview: updated to match the Media -> News card style and provide a "See All News" CTA */}
       <section className="py-20 bg-cream">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <span className="section-eyebrow">Latest</span>
             <h2 className="section-title">News & Stories</h2>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6">
-            {news.slice(0, 3).map((n, i) => <NewsCard key={i} item={n} />)}
+            {news.slice(0, 3).map((item, i) => (
+              <div key={i}
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
+                onClick={() => navigate('media')}
+              >
+                <div className="overflow-hidden h-48">
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full ${newsTagColors[item.tag] || 'bg-orange-light text-orange'}`}>
+                      {item.tag}
+                    </span>
+                    <span className="text-muted text-xs">{item.date}</span>
+                  </div>
+
+                  <h3 className="font-display text-lg text-dark leading-snug mb-2">{item.title}</h3>
+                  <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
+
+                  <div className="mt-4">
+                    <button
+                      onClick={(e) => { e.stopPropagation(); window.open(item.url, '_blank') }}
+                      className="inline-flex items-center gap-1.5 mt-4 text-orange font-bold text-sm hover:underline bg-transparent border-0 cursor-pointer p-0"
+                    >
+                      Read Full Article
+                      <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-orange fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <button onClick={() => navigate('media')} className="inline-flex items-center gap-2 bg-navy text-white font-bold px-5 py-3 rounded-full hover:bg-navy-dark transition-colors">
+              See All News
+            </button>
           </div>
         </div>
       </section>
