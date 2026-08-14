@@ -76,7 +76,7 @@ export const programDetails = {
     photos: [
       'https://i.ibb.co/ccb1JwML/Health-pictures.png',
       '/assets/Images/SRHR Out reach.jpg',
-      'https://picsum.photos/600/400?image=1043',
+      '/assets/Images/53278275207_f1df6bb844_w.jpg',
     ],
 
     getInvolvedText: 'Support our health outreach by volunteering as a peer educator, donating medical supplies, or partnering with us to expand VCT mobile services to more communities.',
