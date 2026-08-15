@@ -116,8 +116,8 @@ function PurposeSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {[
-            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'bo[...]'},
-            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy'[...]},
+            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'border-orange' },
+            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy' },
           ].map((c, i) => (
             <div key={i} className={`bg-white rounded-2xl p-9 border-t-4 ${c.border} shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-transform`}>
               <h3 className="font-display text-2xl text-dark mb-3">{c.title}</h3>
@@ -279,7 +279,7 @@ export default function HomePage({ navigate }) {
           <div className="grid md:grid-cols-3 gap-6">
             {news.slice(0, 3).map((item, i) => (
               <div key={i}
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-p[...]"
                 onClick={() => navigate('media')}
               >
                 <div className="overflow-hidden h-48">
