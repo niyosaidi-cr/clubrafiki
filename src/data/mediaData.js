@@ -55,7 +55,8 @@ export const newsItems = [
 // ─── PUBLICATIONS ────────────────────────────────────────────────────────
 
 export const progressReports = [
-  { title: 'Annual Report 2025–2026', year: '2026', img: 'https://live.staticflickr.com/65535/54686457129_fbb8f028a2_n.jpg', url: '/assets/Pdfs/F-Annual%20Report%202025_2026.pdf' },
+  { title: 'Annual Report 2025–2026', year: '2026', img: '/assets/Images/Annual report 2025.jpg', url: '/assets/Pdfs/Final-Annual Report 2026  (1)_compressed.pdf' },
+  { title: 'Annual Report 2024–2025', year: '2025', img: '/assets/Images/Annual report 2024-2025.png', url: '/assets/Pdfs/Club-Rafiki_Annual-Report_2024_2025_compressed-1.pdf' },
   { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'https://clubrafiki.org/reports/annual-report-2023-2024/' },
   { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: 'https://clubrafiki.org/reports/annual-report-2022-2023/' },
   { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.org/reports/annual-report-2021-2022/' },
