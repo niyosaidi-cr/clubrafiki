@@ -183,10 +183,34 @@ function ProgramsPreview() {
 
 function CTACards({ navigate }) {
   const cards = [
-    { icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', title: 'Join a Program', desc: 'From coding to karate, discover your passion and find your community.', link: 'Learn More', page: 'progr[...]'},
-    { icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 7a4 4 0 1 0 0 8 4 4 0 0 0 0-8z', title: 'Volunteer', desc: 'Share your skills, time, an[...]'},
-    { icon: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z', title: 'Donate', desc: 'Your gift provides [...]'},
-    { icon: 'M3 4h18v18H3zM16 2v4M8 2v4M3 10h18', title: 'Upcoming Events', desc: 'Join us for festivals, competitions, workshops and community gatherings.', link: 'See Events', page: 'news' },
+    { 
+      icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', 
+      title: 'Join a Program', 
+      desc: 'From coding to karate, discover your passion and find your community.', 
+      link: 'Learn More', 
+      action: () => window.location.href = 'https://clubrafiki.org/programs'
+    },
+    { 
+      icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 7a4 4 0 1 0 0 8 4 4 0 0 0 0-8z', 
+      title: 'Volunteer', 
+      desc: 'Share your skills, time, and passion with our community.', 
+      link: 'Apply to Volunteer',
+      action: () => navigate('contact', 'volunteer')
+    },
+    { 
+      icon: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z', 
+      title: 'Donate', 
+      desc: 'Your gift provides resources and opportunities for our youth.', 
+      link: 'Donate Now',
+      action: () => window.location.href = 'https://clubrafiki.org/donate'
+    },
+    { 
+      icon: 'M3 4h18v18H3zM16 2v4M8 2v4M3 10h18', 
+      title: 'Upcoming Events', 
+      desc: 'Join us for festivals, competitions, workshops and community gatherings.', 
+      link: 'See Events', 
+      action: () => window.location.href = 'https://clubrafiki.org/media'
+    },
   ]
 
   return (
@@ -198,8 +222,8 @@ function CTACards({ navigate }) {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c, i) => (
-            <button key={i} onClick={() => navigate(c.page)}
-              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer bor[...]"
+            <button key={i} onClick={c.action}
+              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border border-transparent hover:border-orange/20"
               type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-orange fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
@@ -279,7 +303,7 @@ export default function HomePage({ navigate }) {
           <div className="grid md:grid-cols-3 gap-6">
             {news.slice(0, 3).map((item, i) => (
               <div key={i}
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-p[...]"
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
                 onClick={() => navigate('media')}
               >
                 <div className="overflow-hidden h-48">
