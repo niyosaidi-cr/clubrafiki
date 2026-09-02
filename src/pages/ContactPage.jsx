@@ -50,7 +50,7 @@ export default function ContactPage() {
   const contactInfo = [
     { type: 'pin',   label: 'Address', value: 'KN 2 AV 266, Nyamirambo, Kigali, Rwanda' },
     { type: 'clock', label: 'Hours',   value: 'Monday – Saturday: 09:00 AM – 7:00 PM' },
-    { type: 'mail',  label: 'Email',   value: 'clubrafiki@yahoo.com · info@clubrafiki.com' },
+    { type: 'mail',  label: 'Email',   value: 'clubrafiki@yahoo.com · info@clubrafiki.org' },
     { type: 'phone', label: 'Phone',   value: '+250 788 853 615 · +250 788 512 668' },
   ]
 
