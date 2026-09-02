@@ -84,7 +84,7 @@ export default function ImpactPage() {
               { year: '1978', text: 'Officially granted not-for-profit status.' },
               { year: '1994', text: 'Facilities looted and demolished during the Genocide against the Tutsi. Club Rafiki begins rebuilding.' },
               { year: '2011', text: 'Officially registered as a Community-Based Organization by the Rwanda Governance Board (RGB).' },
-              { year: 'Today', text: 'Reaching 5,000+ youth annually through education, sports, culture, health and empowerment programs.' },
+              { year: 'Today', text: 'Reaching 500,000+ youth annually through education, sports, culture, health and empowerment programs.' },
             ].map((item, i) => (
               <div key={i} className="relative">
                 <span className="absolute -left-[42px] top-1 w-4 h-4 rounded-full bg-orange border-4 border-dark" />
