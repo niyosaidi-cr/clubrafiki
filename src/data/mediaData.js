@@ -72,13 +72,13 @@ export const rafikiBooksJournals = {
   books: [
     { 
       title: 'Winyangiriza Ejo', 
-      img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', 
+      img: '/assets/Images/Winyangiriza-Ejo-1_page-0001.jpg', 
       desc: 'A story about family, abuse, and resilience — a powerful narrative from Club Rafiki youth.',
       url: '/assets/Pdfs/Winyangiriza-Ejo-1.pdf',
     },
     { 
       title: 'COVID-19 Legacy', 
-      img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', 
+      img: '/assets/Images/Covid_19 Legacy.jpg', 
       desc: 'Youth reflections on life, resilience, and hope during unprecedented times.',
       url: '/assets/Pdfs/Rafiki-Book-Covid19-Legacy_compressed.pdf',
     },
