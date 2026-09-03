@@ -75,67 +75,60 @@ export const rafikiBooksJournals = {
       img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/06/Winyangiriza-Ejo-1_page-0001.jpg?resize=1241%2C1754&ssl=1', 
       desc: 'A story about family, abuse, and resilience — a powerful narrative from Club Rafiki youth.',
       url: 'https://clubrafiki.org/books/winyangiriza-ejo/',
-      downloadUrl: 'https://clubrafiki.org/downloads/winyangiriza-ejo.pdf'
     },
     { 
       title: 'COVID-19 Legacy', 
       img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/01/Rafiki_pages-to-jpg-0001.jpg?resize=1241%2C1477&ssl=1', 
       desc: 'Youth reflections on life, resilience, and hope during unprecedented times.',
       url: 'https://clubrafiki.org/books/covid-19-legacy/',
-      downloadUrl: 'https://clubrafiki.org/downloads/covid-19-legacy.pdf'
     },
     { 
       title: 'Our Life in Our Family', 
       img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/12/Book-cover.jpg?resize=1292%2C863&ssl=1', 
       desc: 'Stories from Club Rafiki youth about family life, love, and belonging.',
       url: 'https://clubrafiki.org/books/our-life-in-our-family/',
-      downloadUrl: 'https://clubrafiki.org/downloads/our-life-in-our-family.pdf'
     },
     { 
       title: 'Shining Dreams', 
       img: 'https://clubrafiki.files.wordpress.com/2021/03/shinning-dreams.jpg', 
       desc: 'An inspiring collection of stories and dreams written by youth in the English Corner.',
       url: 'https://clubrafiki.org/books/shining-dreams/',
-      downloadUrl: 'https://clubrafiki.org/downloads/shining-dreams.pdf'
     },
     { 
       title: 'COVID-19 Outbreak', 
       img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', 
       desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.',
       url: 'https://clubrafiki.org/books/covid-19-outbreak/',
-      downloadUrl: 'https://clubrafiki.org/downloads/covid-19-outbreak.pdf'
-    },
+     },
     { 
       title: 'Rise of Hope', 
       img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', 
       desc: 'The debut book written by English Corner students — a testament to their growth in literacy and imagination.',
       url: 'https://clubrafiki.org/books/rise-of-hope/',
-      downloadUrl: 'https://clubrafiki.org/downloads/rise-of-hope.pdf'
     },
     { 
       title: 'Jambo Sadness', 
       img: 'https://clubrafiki.files.wordpress.com/2021/03/jambos-sadness.jpg', 
       desc: 'A story exploring emotions, challenges, and the hope found in community support.',
-      url: 'https://clubrafiki.org/books/jambo-sadness/',
-      downloadUrl: 'https://clubrafiki.org/downloads/jambo-sadness.pdf'
+      url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2020/02/jambo-march-2019.pdf',
     },
   ],
   journals: [
-    { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-special/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-special.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 40', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-40.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-40/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-40.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 37', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-37.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-37/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-37.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 36', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-36.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-36/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-36.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 35', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-35.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-35/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-35.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 34', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-34.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-34/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-34.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 33', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-33.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-33/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-33.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 31', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-31.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-31/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-31.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 30', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-30.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-30/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-30.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 29', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-29.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-29/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-29.pdf', year: '2018' },
-    { title: 'Rafiki Journal No. 01', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-28.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-01/', downloadUrl: 'https://clubrafiki.org/downloads/rafiki-journal-01.pdf', year: '2018' },
-    { title: 'Inshuti No. 27', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-27.jpg', url: 'https://clubrafiki.org/journals/inshuti-27/', downloadUrl: 'https://clubrafiki.org/downloads/inshuti-27.pdf', year: '2018' },
-    { title: 'Inshuti No. 26', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-26.jpg', url: 'https://clubrafiki.org/journals/inshuti-26/', downloadUrl: 'https://clubrafiki.org/downloads/inshuti-26.pdf', year: '2018' },
-    { title: 'Inshuti No. 25', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-25.jpg', url: 'https://clubrafiki.org/journals/inshuti-25/', downloadUrl: 'https://clubrafiki.org/downloads/inshuti-25.pdf', year: '2018' },
-    { title: 'Inshuti No. 24', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-24.jpg', url: 'https://clubrafiki.org/journals/inshuti-24/', downloadUrl: 'https://clubrafiki.org/downloads/inshuti-24.pdf', year: '2018' },
+    { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-special/', year: '2018' },
+    { title: 'Rafiki Journal No. 40', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-40.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-40/', year: '2018' },
+    { title: 'Rafiki Journal No. 37', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-37.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-37/', year: '2018' },
+    { title: 'Rafiki Journal No. 36', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-36.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-36/', year: '2018' },
+    { title: 'Rafiki Journal No. 35', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-35.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-35/', year: '2018' },
+    { title: 'Rafiki Journal No. 34', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-34.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-34/', year: '2018' },
+    { title: 'Rafiki Journal No. 33', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-33.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-33/', year: '2018' },
+    { title: 'Rafiki Journal No. 31', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-31.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-31/', year: '2018' },
+    { title: 'Rafiki Journal No. 30', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-30.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-30/', year: '2018' },
+    { title: 'Rafiki Journal No. 29', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-29.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-29/', year: '2018' },
+    { title: 'Rafiki Journal No. 01', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-28.jpg', url: 'https://clubrafiki.org/journals/rafiki-journal-01/', year: '2018' },
+    { title: 'Inshuti No. 27', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-27.jpg', url: 'https://clubrafiki.org/journals/inshuti-27/', year: '2018' },
+    { title: 'Inshuti No. 26', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-26.jpg', url: 'https://clubrafiki.org/journals/inshuti-26/', year: '2018' },
+    { title: 'Inshuti No. 25', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-25.jpg', url: 'https://clubrafiki.org/journals/inshuti-25/', year: '2018' },
+    { title: 'Inshuti No. 24', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-24.jpg', url: 'https://clubrafiki.org/journals/inshuti-24/', year: '2018' },
   ],
   ebooks: [
     { title: 'REB Pre-Primary School Books', url: 'https://elearning.reb.rw/?category=15&redirect=0', icon: 'book-open' },
@@ -153,6 +146,6 @@ export const strategicPlan = {
   title: 'Club Rafiki Strategy 2025–2030',
   year: '2025',
   img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-11-at-10.52.45.jpeg?resize=2338%2C1732&ssl=1',
-  url: 'https://clubrafiki.org/strategy/2025-2030/',
+  url: '/assets/Pdfs/club-Rafiki-strategic-plan-2025-30-Final_compressed.pdf',
   desc: 'Our strategic plan outlines Club Rafiki\'s vision, goals, and priority actions for 2025 to 2030 — guiding our work to empower youth across Nyamirambo and Rwanda.',
 }
