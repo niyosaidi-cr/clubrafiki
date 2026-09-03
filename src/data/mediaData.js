@@ -72,7 +72,7 @@ export const rafikiBooksJournals = {
   books: [
     { 
       title: 'Winyangiriza Ejo', 
-      img: '/assets/Images/Winyangiriza-Ejo-1_page-0001.jpg', 
+      img: '/assets/Images/Winyangiriza Ejo.jpg', 
       desc: 'A story about family, abuse, and resilience — a powerful narrative from Club Rafiki youth.',
       url: '/assets/Pdfs/Winyangiriza-Ejo-1.pdf',
     },
