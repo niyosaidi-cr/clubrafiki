@@ -57,15 +57,15 @@ export const newsItems = [
 export const progressReports = [
   { title: 'Annual Report 2025–2026', year: '2026', img: '/assets/Images/Annual report 2025.jpg', url: '/assets/Pdfs/Final-Annual Report 2026  (1)_compressed.pdf' },
   { title: 'Annual Report 2024–2025', year: '2025', img: '/assets/Images/Annual report 2024-2025.png', url: '/assets/Pdfs/Club-Rafiki_Annual-Report_2024_2025_compressed-1.pdf' },
-  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: '/assets/Pdfs/Rafiki-2024-FINAL-2_compressed-1.pdf' },
-  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: '/assets/Pdfs/Club Rafiki Annual report 2022_23 thanks.pdf' },
-  { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2022/08/new-report-big_compressed.pdf' },
-  { title: 'Annual Report 2020–2021', year: '2021', img: 'https://clubrafiki.files.wordpress.com/2021/07/annually-report-2020-2021-pic.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2021/08/final-rafiki-report-f-1.pdf' },
-  { title: 'Youth Opinions on COVID-19 in Rwanda', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2020/12/report-cover.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2020/12/club-rafiki_covid19_-report.pdf' },
-  { title: 'Annual Report 2019–2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2019_20-2.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2020/08/club-rafiki-report-2019-2020-22-final_compressed.pdf' },
-  { title: 'Annual Report 2017–2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2017_18.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/08/club-rafiki_annual-report-2017_18.pdf' },
-  { title: 'Annual Report 2016–2017', year: '2017', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2016_17.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2017/11/club-rafiki_annual-report-2016_171.pdf' },
-  { title: 'Annual Report 2014–2015', year: '2015', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2014-2015.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2014/09/annual-report-mtmh-final.pdf' },
+  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: '/assets/Pdfs/Rafiki-202[...]
+  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: '/assets/Pdfs/Club Ra[...]
+  { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.wordpress.[...]
+  { title: 'Annual Report 2020–2021', year: '2021', img: 'https://clubrafiki.files.wordpress.com/2021/07/annually-report-2020-2021-pic.png', url: 'https://clubrafiki.wordpress.com/wp-content/upl[...]
+  { title: 'Youth Opinions on COVID-19 in Rwanda', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2020/12/report-cover.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2[...]
+  { title: 'Annual Report 2019–2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2019_20-2.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2[...]
+  { title: 'Annual Report 2017–2018', year: '2018', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2017_18.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/201[...]
+  { title: 'Annual Report 2016–2017', year: '2017', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2016_17.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/201[...]
+  { title: 'Annual Report 2014–2015', year: '2015', img: 'https://clubrafiki.files.wordpress.com/2021/01/annual-report-2014-2015.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2[...]
 ]
 
 export const rafikiBooksJournals = {
@@ -99,7 +99,7 @@ export const rafikiBooksJournals = {
       img: 'https://clubrafiki.files.wordpress.com/2021/03/covid-19-outbreak.jpg', 
       desc: 'Youth perspectives and experiences during the COVID-19 outbreak in Rwanda.',
       url: '/assets/Pdfs/Covid _19_outbreak_compressed.pdf',
-     },
+      },
     { 
       title: 'Rise of Hope', 
       img: 'https://clubrafiki.files.wordpress.com/2021/03/rise-of-hope.jpg', 
@@ -112,23 +112,29 @@ export const rafikiBooksJournals = {
       desc: 'A story exploring emotions, challenges, and the hope found in community support.',
       url: '/assets/Pdfs/Jambo Sadness.pdf',
     },
+    { 
+      title: 'Chance Comes Once', 
+      img: '/assets/Images/Chance comes once.jpg', 
+      desc: 'A compelling story that explores the importance of seizing opportunities and making meaningful choices.',
+      url: '/assets/Pdfs/chance-comes-once_compressed.pdf',
+    },
   ],
   journals: [
-    { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-special.pdf', year: '2017' },
-    { title: 'Rafiki Journal No. 40', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-40.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-40.pdf', year: '2016' },
-    { title: 'Rafiki Journal No. 37', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-37.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-37.pdf/', year: '2016' },
-    { title: 'Rafiki Journal No. 36', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-36.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-36-final.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 35', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-35.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-35.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 34', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-34.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-34.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 33', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-33.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-33.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 31', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-31.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-31.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 30', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-30.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-no-30.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 29', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-29.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-no29.pdf', year: '2015' },
-    { title: 'Rafiki Journal No. 01', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-28.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal-no-11.pdf', year: '2015' },
-    { title: 'Inshuti No. 27', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-27.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_no_27.pdf', year: '2014' },
-    { title: 'Inshuti No. 26', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-26.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti-numero-26.pdf', year: '2014' },
-    { title: 'Inshuti No. 25', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-25.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_y_urubyiruko_no_25.pdf', year: '2014' },
-    { title: 'Inshuti No. 24', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-24.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_n_24.pdf', year: '2014' },
+    { title: 'Rafiki Journal Special', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-special.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-j[...]
+    { title: 'Rafiki Journal No. 40', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-40.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 37', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-37.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 36', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-36.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 35', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-35.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 34', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-34.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 33', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-33.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 31', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-31.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 30', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-30.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 29', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-29.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Rafiki Journal No. 01', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-28.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/rafiki-journal[...]
+    { title: 'Inshuti No. 27', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-27.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_no_27.pdf', y[...]
+    { title: 'Inshuti No. 26', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-26.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti-numero-26.pdf[...]
+    { title: 'Inshuti No. 25', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-25.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_y_urubyiruko_[...]
+    { title: 'Inshuti No. 24', img: 'https://clubrafiki.files.wordpress.com/2021/03/rafiki-journal-24.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2018/06/inshuti_n_24.pdf', ye[...]
   ],
   ebooks: [
     { title: 'REB Pre-Primary School Books', url: 'https://elearning.reb.rw/?category=15&redirect=0', icon: 'book-open' },
