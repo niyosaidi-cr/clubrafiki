@@ -57,8 +57,8 @@ export const newsItems = [
 export const progressReports = [
   { title: 'Annual Report 2025–2026', year: '2026', img: '/assets/Images/Annual report 2025.jpg', url: '/assets/Pdfs/Final-Annual Report 2026  (1)_compressed.pdf' },
   { title: 'Annual Report 2024–2025', year: '2025', img: '/assets/Images/Annual report 2024-2025.png', url: '/assets/Pdfs/Club-Rafiki_Annual-Report_2024_2025_compressed-1.pdf' },
-  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'https://clubrafiki.org/reports/annual-report-2023-2024/' },
-  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: 'https://clubrafiki.org/reports/annual-report-2022-2023/' },
+  { title: 'Annual Report 2023–2024', year: '2024', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', url: 'public/assets/Pdfs/Rafiki-2024-FINAL-2_compressed-1.pdf' },
+  { title: 'Annual Report 2022–2023', year: '2023', img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/Report-2022-2023-2.png?resize=1480%2C1184&ssl=1', url: '/assets/Pdfs/Club Rafiki Annual report 2022_23 thanks.pdf' },
   { title: 'Annual Report 2021–2022', year: '2022', img: 'https://clubrafiki.files.wordpress.com/2022/05/282380379_545397163879467_1403634666664940362_n.jpg', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2022/08/new-report-big_compressed.pdf' },
   { title: 'Annual Report 2020–2021', year: '2021', img: 'https://clubrafiki.files.wordpress.com/2021/07/annually-report-2020-2021-pic.png', url: 'https://clubrafiki.wordpress.com/wp-content/uploads/2021/08/final-rafiki-report-f-1.pdf' },
   { title: 'Semi-Annual Report July–Dec 2020', year: '2020', img: 'https://clubrafiki.files.wordpress.com/2021/01/quarterly-report-oct-to-dec-2020.png', url: 'https://clubrafiki.org/reports/semi-annual-report-2020/' },
