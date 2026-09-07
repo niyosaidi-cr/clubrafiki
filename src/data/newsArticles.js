@@ -110,7 +110,7 @@ export const newsArticles = [
     ],
 
     photos: [
-      '/assets/Images/GoA Visit cover.jpg',
+      '/assets/Images/Goa Cover.jpg',
       '/assets/Images/GoA Visit 5.jpg',
       '/assets/Images/GoA Visit 4.jpg',
       '/assets/Images/GoA Visit 3.jpg',
@@ -190,7 +190,7 @@ export const newsArticles = [
 
   // ── 6. VCT CAMPAIGN ───────────────────────────────────────────────────────
   {
-    id: 'vct-campaign-2024',
+    id: 'vct-campaign-2019',
     tag: 'Health',
     date: 'December 2024',
     title: 'Mobile VCT Campaign Reaches 1,200 in Nyamirambo',
