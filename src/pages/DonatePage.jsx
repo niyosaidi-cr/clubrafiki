@@ -139,6 +139,24 @@ export default function DonatePage() {
                 </svg>
                 Secure and encrypted. Your information is safe.
               </p>
+
+              {/* --- add this block after the Donate button (below line with the Donate button) --- */}
+              <div className="mt-6 p-6 bg-white rounded-2xl border border-border">
+                <h3 className="font-display text-lg text-dark mb-2">Give by Mobile Money</h3>
+
+                <p className="text-sm text-muted mb-1">
+                  MTN Momo Code: <span className="font-mono font-medium">1871379</span>
+                </p>
+
+                <p className="text-sm text-muted mb-2">
+                  Momo Account: <span className="font-mono font-medium">0786260019</span> — Name: <strong>CLUB RAFIKI</strong>
+                </p>
+
+                <h4 className="font-semibold text-sm mt-3 mb-1">International Transfers</h4>
+                <p className="text-sm text-muted mb-0">
+                  You can send money from abroad via: WorldRemit, Remitly, Western Union, MoneyGram, or Sendwave. Please use the MTN Momo account details above or contact us for bank transfer instructions.
+                </p>
+              </div>
             </div>
 
             {/* Why give */}
