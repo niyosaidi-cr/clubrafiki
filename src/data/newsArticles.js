@@ -41,7 +41,7 @@ export const newsArticles = [
       '/assets/Images/Ecobank in CR 4.jpg',
       '/assets/Images/Ecobank in CR 2.jpg',
       '/assets/Images/Ecobank in CR 3.jpg',
-      '/assets/Images/Ecobank in Rafiki CR.jpg',
+      '/public/assets/Images/Ecobank in CR Cover.jpg',
       '/assets/Images/Ecobank in CR 5.jpg',
     ],
   },
@@ -52,7 +52,7 @@ export const newsArticles = [
     tag: 'Latest News',
     date: 'August 15, 2025',
     title: 'EDU-FUN FIESTA: Where Learning Meets Fun at Club Rafiki!',
-    heroImg: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/11/SnapInsta.to_534835635_18059071919457853_7641123639261403111_n.jpg?resize=1080%2C720&ssl=1',
+    heroImg: '/assets/Images/Edu fun fiesta cover.jpg',
     intro: 'Kigali, August 15, 2025 — Club Rafiki hosted its much-anticipated EDU-FUN FIESTA, a vibrant educational festival that brought together children, youth, and community members for a day where learning and fun came together in one celebration.',
 
     sections: [
@@ -75,9 +75,10 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/11/SnapInsta.to_534835635_18059071919457853_7641123639261403111_n.jpg?resize=1080%2C720&ssl=1',
-      'https://i.ibb.co/RTggy2pK/dsc-7517-scaled.jpg',
-      'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg',
+      '/assets/Images/Edu fun fiesta 1.jpg',
+      '/assets/Images/Edu fun fiesta 2.jpg',
+      '/assets/Images/Edu fun fiesta 3.jpg',
+      '/assets/Images/Edu fun fiesta 4.jpg',
     ],
   },
 
