@@ -41,7 +41,6 @@ export const newsArticles = [
       '/assets/Images/Ecobank in CR 4.jpg',
       '/assets/Images/Ecobank in CR 2.jpg',
       '/assets/Images/Ecobank in CR 3.jpg',
-      '/public/assets/Images/Ecobank in CR Cover.jpg',
       '/assets/Images/Ecobank in CR 5.jpg',
     ],
   },
@@ -88,7 +87,7 @@ export const newsArticles = [
     tag: 'Latest News',
     date: 'August 3, 2025',
     title: 'President Kagame at Club Rafiki for Giants of Africa Basketball Camp',
-    heroImg: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54697022511_d738c63433_c.jpg?resize=675%2C800&ssl=1',
+    heroImg: '/assets/Images/Goa Cover.jpg',
     intro: 'Kigali, August 3, 2025 — Club Rafiki was honored by the visit of His Excellency President Paul Kagame during the Giants of Africa Basketball Camp, an annual event that brings together talented young athletes from across Rwanda and the continent.',
 
     sections: [
@@ -111,9 +110,11 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54697022511_d738c63433_c.jpg?resize=675%2C800&ssl=1',
-      'https://i.ibb.co/35x8RJ9W/52112159933-8dee1762f0-c.jpg',
-      'https://picsum.photos/600/400?image=1031',
+      '/assets/Images/GoA Visit cover.jpg',
+      '/assets/Images/GoA Visit 5.jpg',
+      '/assets/Images/GoA Visit 4.jpg',
+      '/assets/Images/GoA Visit 3.jpg',
+      '/assets/Images/GoA Visit 2.jpg',
     ],
   },
 
