@@ -147,9 +147,11 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54684050769_f3172ccf5c_c.jpg?resize=799%2C533&ssl=1',
-      'https://i.ibb.co/PsjqzjV4/Music-2-1.png',
-      'https://i.ibb.co/CKBGq1mr/cropped-dsc-08142.jpg',
+      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54684050769_f3172ccf5c_c.jpg?resize=799%2C533&ssl=1'
+      '/assets/Images/RBA Visit 2.jpg',
+      '/assets/Images/RBA Visit 3.jpg',
+      '/assets/Images/RBA Visit.jpg',
+      '/assets/Images/RBA in Rafiki.jpg',
     ],
   },
 
