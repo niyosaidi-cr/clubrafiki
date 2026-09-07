@@ -13,7 +13,7 @@ export const newsItems = [
   },
   {
     articleId: 'edu-fun-fiesta',
-    img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/11/SnapInsta.to_534835635_18059071919457853_7641123639261403111_n.jpg?resize=1080%2C720&ssl=1',
+    img: '/assets/Images/Edu fun fiesta cover.jpg',
     alt: 'EDU-FUN FIESTA event at Club Rafiki with children learning',
     tag: 'Latest News',
     title: 'EDU-FUN FIESTA: Where Learning Meets Fun at Club Rafiki!',
