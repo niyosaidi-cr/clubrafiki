@@ -24,7 +24,7 @@ export const newsItems = [
   },
   {
     articleId: 'kagame-giants-of-africa',
-    img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54697022511_d738c63433_c.jpg?resize=675%2C800&ssl=1',
+    img: '/assets/Images/GoA Visit cover.jpg',
     alt: 'President Kagame at Giants of Africa Basketball Camp',
     tag: 'Latest News',
     title: 'President Kagame at Club Rafiki for Giants of Africa Basketball Camp',
