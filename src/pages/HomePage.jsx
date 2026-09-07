@@ -117,8 +117,8 @@ function PurposeSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {[
-            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'bo[...]',
-            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy'[...] 
+            { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'border-orange' },
+            { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy' },
           ].map((c, i) => (
             <div key={i} className={`bg-white rounded-2xl p-9 border-t-4 ${c.border} shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-transform`}>
               <h3 className="font-display text-2xl text-dark mb-3">{c.title}</h3>
@@ -149,7 +149,7 @@ function ProgramsPreview() {
             <button key={p.id} onClick={() => setActive(i)}
               className={`px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition-all cursor-pointer ${
                 i === active ? 'bg-navy text-white border-navy' : 'bg-white text-muted border-border hover:bg-navy hover:text-white hover:border-navy'
-              }`
+              }`}
               type="button">
               {p.label}
             </button>
@@ -224,7 +224,7 @@ function CTACards({ navigate }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c, i) => (
             <button key={i} onClick={c.action}
-              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer bor[...]
+              className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0"
               type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-orange fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
@@ -304,7 +304,7 @@ export default function HomePage({ navigate }) {
           <div className="grid md:grid-cols-3 gap-6">
             {news.slice(0, 3).map((item, i) => (
               <div key={i}
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-p[...]"
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
                 onClick={() => navigate('media')}
               >
                 <div className="overflow-hidden h-48">
