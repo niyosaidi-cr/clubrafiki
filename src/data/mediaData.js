@@ -79,7 +79,7 @@ export const progressReports = [
     year: '2024', 
     img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2024/07/2024-report-photo.png?resize=657%2C479&ssl=1', 
     alt: 'Club Rafiki Annual Report 2023-2024',
-    url: 'public/assets/Pdfs/Rafiki-2024-FINAL-2_compressed-1.pdf',
+    url: '/assets/Pdfs/Rafiki-2024-FINAL-2_compressed-1.pdf',
   },
   { 
     title: 'Annual Report 2022–2023', 
