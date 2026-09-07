@@ -2,7 +2,7 @@
 export const newsItems = [
   {
     articleId: 'ecobank-computers',
-    img: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563104732_18375687874145859_6516023025399517018_n.jpg?resize=1080%2C719&ssl=1',
+    img: '/assets/Images/Ecobank in Rafiki CR.jpg',
     alt: 'Ecobank Rwanda computers donation to Club Rafiki youth',
     tag: 'Latest News',
     title: 'Ecobank Rwanda Donates Computers to Empower Youth at Club Rafiki',
