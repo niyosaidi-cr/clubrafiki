@@ -45,15 +45,15 @@ export const newsItems = [
     url: 'https://clubrafiki.org/news/talent-showcase-rba-iwacu/',
   },
   {
-    articleId: 'vct-campaign-2024',
+    articleId: 'vct-campaign-2019',
     img: 'https://i.ibb.co/ccb1JwML/Health-pictures.png',
     alt: 'Mobile VCT health campaign reaching community members',
     tag: 'Health',
     title: 'Mobile VCT Campaign Reaches 1,200 in Nyamirambo',
     desc: 'Our health outreach team conducted a major voluntary HIV testing campaign across 6 neighborhoods, making life-saving services accessible to the community.',
-    date: 'December 2024',
+    date: 'September 2019',
     read: '3 min read',
-    url: 'https://clubrafiki.org/news/mobile-vct-campaign-2024/',
+    url: 'https://clubrafiki.org/news/mobile-vct-campaign-2019/',
   },
 ];
 
