@@ -217,9 +217,11 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i.ibb.co/ccb1JwML/Health-pictures.png',
-      'https://picsum.photos/600/400?image=1042',
-      'https://picsum.photos/600/400?image=1043',
+      '/assets/Images/SRHR outreach.jpg',
+      '/assets/Images/SRHR outreach 3.jpg',
+      '/assets/Images/SRHR outreach 4.jpg',
+      '/assets/Images/SRHR outreach 5.jpg',
+      '/assets/Images/SRHR outreach 2.jpg',
     ],
   },
 ]
