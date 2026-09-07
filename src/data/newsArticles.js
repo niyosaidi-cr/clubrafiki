@@ -10,7 +10,7 @@ export const newsArticles = [
     tag: 'Latest News',
     date: 'October 11, 2025',
     title: 'Ecobank Rwanda Donates Computers to Empower Youth at Club Rafiki',
-    heroImg: 'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563104732_18375687874145859_6516023025399517018_n.jpg?resize=1080%2C719&ssl=1',
+    heroImg: '/assets/Images/Ecobank in Rafiki CR.jpg',
     intro: 'Kigali, October 11, 2025 — Club Rafiki was proud to receive vital ICT equipment support from Ecobank Rwanda. This support was part of the bank\'s commitment to empowering young people and promoting digital inclusion across the country. Several other youth institutions also received support.',
 
     sections: [
@@ -37,12 +37,12 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563104732_18375687874145859_6516023025399517018_n-1024x682.jpg?ssl=1',
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563114995_18375687910145859_1142087211674923579_n-1024x684.jpg?ssl=1',
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_562830064_18375690826145859_6953139530664060912_n-1024x1024.jpg?ssl=1',
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563814008_18375690835145859_7593781936769423808_n.jpg?resize=1024%2C1024&ssl=1',
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_563175171_18375690868145859_6792296436506143588_n-1024x1024.jpg?ssl=1',
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/SnapInsta.to_562673695_18375687919145859_696686241970069859_n-1024x684.jpg?ssl=1',
+      '/assets/Images/Ecobank Cover.jpeg',
+      '/assets/Images/Ecobank in CR 4.jpg',
+      '/assets/Images/Ecobank in CR 2.jpg',
+      '/assets/Images/Ecobank in CR 3.jpg',
+      '/assets/Images/Ecobank in Rafiki CR.jpg',
+      '/assets/Images/Ecobank in CR 5.jpg',
     ],
   },
 
