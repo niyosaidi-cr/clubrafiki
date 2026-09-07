@@ -87,7 +87,7 @@ export const newsArticles = [
     tag: 'Latest News',
     date: 'August 3, 2025',
     title: 'President Kagame at Club Rafiki for Giants of Africa Basketball Camp',
-    heroImg: '/assets/Images/Goa Cover.jpg',
+    heroImg: '/assets/Images/Goa Cover New one.jpg',
     intro: 'Kigali, August 3, 2025 — Club Rafiki was honored by the visit of His Excellency President Paul Kagame during the Giants of Africa Basketball Camp, an annual event that brings together talented young athletes from across Rwanda and the continent.',
 
     sections: [
