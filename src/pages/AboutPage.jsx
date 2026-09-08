@@ -179,7 +179,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="text-center text-muted/50 text-xs mt-8 italic">
-            Click any certificate to view details ·<code className="bg-cream px-1 rounded">src/data/siteData.js</code>
+            Click any certificate to view details· <code className="bg-cream px-1 rounded">src/data/siteData.js</code>
           </p>
         </div> 
       </section>
