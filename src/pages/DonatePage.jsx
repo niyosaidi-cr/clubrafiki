@@ -64,7 +64,7 @@ export default function DonatePage() {
 
   return (
     <>
-      <PageBanner title="Make a Donation" subtitle="Your generosity changes lives in Nyamirambo, Kigali." />
+      <PageBanner title="Make a Donation" subtitle="Your generosity changes lives of Youth in Nyarugenge District, City of Kigali." />
 
       <section className="py-20 bg-cream">
         <div className="max-w-[1200px] mx-auto px-6">
