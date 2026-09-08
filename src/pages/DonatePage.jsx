@@ -38,6 +38,17 @@ function ImpactIcon({ type }) {
       </svg>
     )
   }
+  if (type === 'lasting') {
+    return (
+      <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" aria-hidden="true">
+        <circle cx="12" cy="12" r="1" />
+        <path d="M12 1v6m0 6v6" />
+        <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24" />
+        <path d="M1 12h6m6 0h6" />
+        <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24" />
+      </svg>
+    )
+  }
   return (
     <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current fill-none stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" aria-hidden="true">
       <circle cx="12" cy="12" r="10" />
@@ -154,7 +165,7 @@ export default function DonatePage() {
 
                 <h4 className="font-semibold text-sm mt-3 mb-1">International Transfers</h4>
                 <p className="text-sm text-muted mb-0">
-                  You can send money from abroad via: WorldRemit, Remitly, Western Union, MoneyGram, or Sendwave. Please use the MTN Momo account details above or contact us for bank transfer instructions.
+                  You can send money from abroad via: WorldRemit, Remitly, Western Union, MoneyGram, or Sendwave. Please use the MTN Momo account details above or contact us for bank transfer instruct[...]
                 </p>
               </div>
             </div>
