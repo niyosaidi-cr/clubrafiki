@@ -29,7 +29,7 @@ function HeroSlider({ navigate }) {
   return (
     <section className="relative h-[85vh] min-h-[520px] overflow-hidden">
       {heroSlides.map((s, i) => (
-        <div key={i} className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}>
+        <div key={s.title + i} className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}>
           <img src={s.img} alt={s.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.55))' }} />
         </div>
@@ -62,7 +62,7 @@ function HeroSlider({ navigate }) {
       {/* Arrows */}
       <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4 pointer-events-none">
         {[prev, next].map((fn, i) => (
-          <button key={i} onClick={fn}
+          <button key={i === 0 ? 'prev-arrow' : 'next-arrow'} onClick={fn}
             className="pointer-events-auto w-11 h-11 rounded-full border border-white/30 bg-white/20 backdrop-blur-sm grid place-items-center hover:bg-white/40 transition-colors cursor-pointer"
             type="button">
             <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-white fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
@@ -77,8 +77,8 @@ function HeroSlider({ navigate }) {
 
       {/* Dots */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2">
-        {heroSlides.map((_, i) => (
-          <button key={i} onClick={() => setCurrent(i)}
+        {heroSlides.map((s, i) => (
+          <button key={s.title + '-dot'} onClick={() => setCurrent(i)}
             className={`w-2 h-2 rounded-full border-0 cursor-pointer transition-all ${i === current ? 'bg-white scale-125' : 'bg-white/40'}`}
             type="button"
             aria-label={`Go to slide ${i + 1}`}
@@ -95,7 +95,7 @@ function StatsBand() {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((s, i) => (
-            <div key={i} className={`text-center py-4 px-4 ${i < stats.length - 1 ? 'border-r border-white/15' : ''}`}>
+            <div key={s.label} className={`text-center py-4 px-4 ${i < stats.length - 1 ? 'border-r border-white/15' : ''}`}>
               <div className="font-display text-4xl font-black text-orange leading-none">{s.value}</div>
               <div className="text-white/75 text-sm font-medium mt-1">{s.label}</div>
             </div>
@@ -119,8 +119,8 @@ function PurposeSection() {
           {[
             { title: 'Our Vision', text: 'To contribute to the development of young people so that they grow in body and mind and are able to play a significant role in development.', border: 'border-orange' },
             { title: 'Our Mission', text: 'To empower children and youth through four fundamental actions: to train, inform, frame, and equip them for a successful future.', border: 'border-navy' },
-          ].map((c, i) => (
-            <div key={i} className={`bg-white rounded-2xl p-9 border-t-4 ${c.border} shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-transform`}>
+          ].map((c) => (
+            <div key={c.title} className={`bg-white rounded-2xl p-9 border-t-4 ${c.border} shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-transform`}>
               <h3 className="font-display text-2xl text-dark mb-3">{c.title}</h3>
               <p className="text-muted leading-relaxed">{c.text}</p>
             </div>
@@ -164,8 +164,8 @@ function ProgramsPreview() {
             <h3 className="font-display text-2xl text-navy mb-3">{prog.title}</h3>
             <p className="text-muted mb-5">{prog.desc}</p>
             <ul className="flex flex-col gap-2.5">
-              {prog.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-sm text-ink">
+              {prog.items.map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-sm text-ink">
                   <span className="w-5 h-5 rounded-full bg-green flex-shrink-0 mt-0.5 flex items-center justify-center">
                     <svg viewBox="0 0 20 20" className="w-3 h-3 fill-none stroke-white stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
                       <path d="M5 10l3 3 7-7"/>
@@ -222,8 +222,8 @@ function CTACards({ navigate }) {
           <h2 className="section-title">How You Can Help</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {cards.map((c, i) => (
-            <button key={i} onClick={c.action}
+          {cards.map((c) => (
+            <button key={c.title} onClick={c.action}
               className="bg-white rounded-2xl p-7 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all text-left cursor-pointer border-0"
               type="button">
               <div className="w-12 h-12 rounded-xl bg-orange-light grid place-items-center mb-4">
@@ -271,8 +271,8 @@ function TestimonialsSection() {
           <p className="font-bold text-white">{t.name}</p>
           <p className="text-orange text-sm">{t.title}</p>
           <div className="flex justify-center gap-3 mt-8">
-            {testimonials.map((_, i) => (
-              <button key={i} onClick={() => setCurrent(i)}
+            {testimonials.map((item, i) => (
+              <button key={item.name} onClick={() => setCurrent(i)}
                 className={`w-2.5 h-2.5 rounded-full border-0 cursor-pointer transition-colors ${i === current ? 'bg-orange' : 'bg-white/25'}`}
                 type="button"
                 aria-label={`Go to testimonial ${i + 1}`}
@@ -302,8 +302,8 @@ export default function HomePage({ navigate }) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {news.slice(0, 3).map((item, i) => (
-              <div key={i}
+            {news.slice(0, 3).map((item) => (
+              <div key={item.title}
                 className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
                 onClick={() => navigate('media')}
               >
@@ -339,7 +339,7 @@ export default function HomePage({ navigate }) {
           </div>
 
           <div className="text-center mt-8">
-            <button onClick={() => navigate('media')} className="inline-flex items-center gap-2 bg-navy text-white font-bold px-5 py-3 rounded-full hover:bg-navy-dark transition-colors">
+            <button onClick={() => navigate('media')} className="inline-flex items-center gap-2 bg-navy text-white font-bold px-5 py-3 rounded-full hover:bg-navy-dark transition-colors cursor-pointer border-0">
               See All News
             </button>
           </div>
