@@ -1,7 +1,3 @@
-// ─── FULL NEWS ARTICLE CONTENT ───────────────────────────────────────────────
-// Each article has: id, tag, date, title, heroImg, intro, sections[], photos[], closing
-// sections: { heading?, content, quote? { text, author } }
-
 export const newsArticles = [
 
   // ── 1. ECOBANK ─────────────────────────────────────────────────────────────
@@ -81,7 +77,7 @@ export const newsArticles = [
     ],
   },
 
-  // ── 3. PRESIDENT KAGAME ────────────────────────────────────────────────────
+  // ── 3. PRESIDENT KAGAME ────────────────────────────────────────────────    
   {
     id: 'kagame-giants-of-africa',
     tag: 'Latest News',
@@ -148,7 +144,7 @@ export const newsArticles = [
     ],
 
     photos: [
-      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54684050769_f3172ccf5c_c.jpg?resize=799%2C533&ssl=1'
+      'https://i0.wp.com/clubrafiki.com/wp-content/uploads/2025/10/54684050769_f3172ccf5c_c.jpg?resize=799%2C533&ssl=1',
       '/assets/Images/RBA Visit 2.jpg',
       '/assets/Images/RBA Visit 3.jpg',
       '/assets/Images/RBA Visit.jpg',
