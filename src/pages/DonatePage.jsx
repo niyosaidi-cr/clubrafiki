@@ -58,7 +58,7 @@ function ImpactIcon({ type }) {
 }
 
 export default function DonatePage() {
-  const showToast = useToast()
+  const { showToast } = useToast()
   const [type, setType] = useState('one-time')
   const [selectedAmt, setSelectedAmt] = useState(50)
   const [customAmt, setCustomAmt] = useState('')
@@ -151,7 +151,7 @@ export default function DonatePage() {
                 Secure and encrypted. Your information is safe.
               </p>
 
-              {/* --- add this block after the Donate button (below line with the Donate button) --- */}
+              {/* Mobile Money & International Transfer Info Box */}
               <div className="mt-6 p-6 bg-white rounded-2xl border border-border">
                 <h3 className="font-display text-lg text-dark mb-2">Give by Mobile Money</h3>
 
@@ -165,7 +165,7 @@ export default function DonatePage() {
 
                 <h4 className="font-semibold text-sm mt-3 mb-1">International Transfers</h4>
                 <p className="text-sm text-muted mb-0">
-                  You can send money from abroad via: WorldRemit, Remitly, Western Union, MoneyGram, or Sendwave. Please use the MTN Momo account details above or contact us for bank transfer instruct[...]
+                  You can send money from abroad via: WorldRemit, Remitly, Western Union, MoneyGram, or Sendwave. Please use the MTN Momo account details above or contact us for bank transfer instructions.
                 </p>
               </div>
             </div>
@@ -177,13 +177,13 @@ export default function DonatePage() {
               <p className="text-muted mb-8 leading-relaxed">Every dollar goes directly to programs that transform young lives in Nyamirambo. Here's what your donation makes possible:</p>
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: 'digital', title: 'Digital Skills', desc: '$50 provides one month of ICT training for a young person, covering coding, design, and entrepreneurship.' },
-                  { icon: 'sports', title: 'Sports Program', desc: '$100 equips a youth athlete with gear and covers their registration in our sports programs for a full term.' },
-                  { icon: 'education', title: 'Education Support', desc: '$150 sponsors a youth through a full semester of language and literacy classes at our center.' },
-                  { icon: 'girls', title: 'Girls Empowerment', desc: '$250 sponsors a girl through our entire Girl Up leadership and vocational training program.' },
-                  { icon: 'lasting', title: 'Lasting Change', desc: 'Monthly giving ensures we can plan long-term programs and create sustainable impact in Nyamirambo.' },
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-4 bg-white rounded-2xl p-5 shadow-[0_2px_12px_rgba(0,0,0,0.05)]">
+                  { id: 'digital', icon: 'digital', title: 'Digital Skills', desc: '$50 provides one month of ICT training for a young person, covering coding, design, and entrepreneurship.' },
+                  { id: 'sports', icon: 'sports', title: 'Sports Program', desc: '$100 equips a youth athlete with gear and covers their registration in our sports programs for a full term.' },
+                  { id: 'education', icon: 'education', title: 'Education Support', desc: '$150 sponsors a youth through a full semester of language and literacy classes at our center.' },
+                  { id: 'girls', icon: 'girls', title: 'Girls Empowerment', desc: '$250 sponsors a girl through our entire Girl Up leadership and vocational training program.' },
+                  { id: 'lasting', icon: 'lasting', title: 'Lasting Change', desc: 'Monthly giving ensures we can plan long-term programs and create sustainable impact in Nyamirambo.' },
+                ].map((item) => (
+                  <div key={item.id} className="flex gap-4 bg-white rounded-2xl p-5 shadow-[0_2px_12px_rgba(0,0,0,0.05)]">
                     <div className="w-12 h-12 rounded-xl bg-orange-light text-orange flex items-center justify-center flex-shrink-0">
                       <ImpactIcon type={item.icon} />
                     </div>
