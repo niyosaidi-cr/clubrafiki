@@ -5,7 +5,7 @@ import { partners, certificates } from '../data/siteData'
 function CertLightbox({ cert, onClose }) {
   return (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[200] flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/85 backdrop-blur-sm z-[200] flex items-center justify-center p-4"
       onClick={onClose}
     >
       <div
@@ -20,6 +20,7 @@ function CertLightbox({ cert, onClose }) {
           <button
             onClick={onClose}
             className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white text-lg grid place-items-center transition-colors border-0 cursor-pointer"
+            aria-label="Close modal"
           >✕</button>
         </div>
         <div className="p-8">
@@ -82,7 +83,11 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <img src="https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/54697022511_d738c63433_c.jpg?strip=info&w=675&ssl=1" alt="Youth at Club Rafiki" className="rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)]" />
+            <img 
+              src="https://i0.wp.com/clubrafiki.com/wp-content/uploads/2023/08/54697022511_d738c63433_c.jpg?strip=info&w=675&ssl=1" 
+              alt="Youth at Club Rafiki" 
+              className="rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)]" 
+            />
             <div>
               <h2 className="font-display text-3xl text-dark mb-5">Our Story</h2>
               <p className="text-muted leading-loose mb-4">Our journey began in <strong className="text-dark">1974</strong>, founded by the Congregation of Dominican Fathers. By 1976, on land granted by the government, we established our core infrastructure — a library, a main hall, and basketball and volleyball courts.</p>
@@ -130,8 +135,8 @@ export default function AboutPage() {
                 <h4 className="text-green font-bold mb-2">Our Mission</h4>
                 <p className="text-muted mb-3">Our mission is articulated through four fundamental actions:</p>
                 <ul className="flex flex-col gap-2">
-                  {['To train children and youth','To inform children and youth','To frame children and youth','To equip children and youth'].map((item, i) => (
-                    <li key={i} className="flex gap-2 items-start text-muted">
+                  {['To train children and youth','To inform children and youth','To frame children and youth','To equip children and youth'].map((item) => (
+                    <li key={item} className="flex gap-2 items-start text-muted">
                       <span className="text-green mt-0.5">✦</span> {item}
                     </li>
                   ))}
@@ -151,8 +156,8 @@ export default function AboutPage() {
                   'Organize events with national and international significance',
                   'Represent Rwandan youth in international policy-making bodies',
                   'Build alliances with international child and youth organizations',
-                ].map((obj, i) => (
-                  <li key={i} className="flex gap-3 items-start text-muted text-sm">
+                ].map((obj) => (
+                  <li key={obj} className="flex gap-3 items-start text-muted text-sm">
                     <span className="w-4 h-4 rounded-full bg-navy-light border-2 border-navy flex-shrink-0 mt-0.5" />
                     {obj}
                   </li>
@@ -174,8 +179,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-            {certificates.map((cert, i) => (
-              <CertCard key={i} cert={cert} onClick={() => setActiveCert(cert)} />
+            {certificates.map((cert) => (
+              <CertCard key={cert.title + cert.year} cert={cert} onClick={() => setActiveCert(cert)} />
             ))}
           </div>
           <p className="text-center text-muted/50 text-xs mt-8 italic">
@@ -192,8 +197,8 @@ export default function AboutPage() {
             <h2 className="section-title">Our Valued Partners</h2>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {partners.map((p, i) => (
-              <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" className="partner-card bg-white rounded-xl py-5 px-3 text-center shadow-[0_2px_12px_rgba(0,0,0,0.06)] inline-block">
+            {partners.map((p) => (
+              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="partner-card bg-white rounded-xl py-5 px-3 text-center shadow-[0_2px_12px_rgba(0,0,0,0.06)] inline-block">
                 <img src={p.img} alt={p.name} className="h-12 object-contain mx-auto mb-2" />
                 <p className="text-xs font-semibold text-muted">{p.name}</p>
               </a>
