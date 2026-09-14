@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 // Consolidating all data imports into a single clean line
 import { heroSlides, stats, programs, testimonials } from '../data/siteData'
 import { newsItems as news } from '../data/mediaData'
+import { newsArticles } from '../data/newsArticles'
 import NewsCard from '../components/NewsCard'
+import NewsArticlePage from './NewsArticlePage'
 
 const newsTagColors = {
   'Latest News':  'bg-orange-light text-orange',
@@ -286,6 +288,17 @@ function TestimonialsSection() {
 }
 
 export default function HomePage({ navigate }) {
+  const [selectedArticle, setSelectedArticle] = useState(null)
+
+  if (selectedArticle) {
+    return (
+      <NewsArticlePage 
+        article={selectedArticle} 
+        onBack={() => setSelectedArticle(null)} 
+      />
+    )
+  }
+
   return (
     <>
       <HeroSlider navigate={navigate} />
@@ -293,7 +306,7 @@ export default function HomePage({ navigate }) {
       <PurposeSection />
       <ProgramsPreview />
       <CTACards navigate={navigate} />
-      {/* News Preview: updated to match the Media -> News card style and provide a "See All News" CTA */}
+      {/* News Preview: updated to match the Media -> News card style and open full detailed view */}
       <section className="py-20 bg-cream">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
@@ -302,29 +315,48 @@ export default function HomePage({ navigate }) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {news.slice(0, 3).map((item) => (
-              <div key={item.title}
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer"
-                onClick={() => navigate('media')}
-              >
-                <div className="overflow-hidden h-48">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full ${newsTagColors[item.tag] || 'bg-orange-light text-orange'}`}>
-                      {item.tag}
-                    </span>
-                    <span className="text-muted text-xs">{item.date}</span>
+            {news.slice(0, 3).map((item) => {
+              const fullArticleData = newsArticles.find(a => a.id === item.id)
+
+              return (
+                <div key={item.title}
+                  className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all group cursor-pointer flex flex-col justify-between"
+                  onClick={() => {
+                    if (fullArticleData) {
+                      setSelectedArticle(fullArticleData)
+                    } else {
+                      navigate('media')
+                    }
+                  }}
+                >
+                  <div>
+                    <div className="overflow-hidden h-48">
+                      <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full ${newsTagColors[item.tag] || 'bg-orange-light text-orange'}`}>
+                          {item.tag}
+                        </span>
+                        <span className="text-muted text-xs">{item.date}</span>
+                      </div>
+
+                      <h3 className="font-display text-lg text-dark leading-snug mb-2">{item.title}</h3>
+                      <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
 
-                  <h3 className="font-display text-lg text-dark leading-snug mb-2">{item.title}</h3>
-                  <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
-
-                  <div className="mt-4">
+                  <div className="px-6 pb-6 pt-0">
                     <button
-                      onClick={(e) => { e.stopPropagation(); window.open(item.url, '_blank') }}
-                      className="inline-flex items-center gap-1.5 mt-4 text-orange font-bold text-sm hover:underline bg-transparent border-0 cursor-pointer p-0"
+                      onClick={(e) => { 
+                        e.stopPropagation()
+                        if (fullArticleData) {
+                          setSelectedArticle(fullArticleData)
+                        } else {
+                          navigate('media')
+                        }
+                      }}
+                      className="inline-flex items-center gap-1.5 text-orange font-bold text-sm hover:underline bg-transparent border-0 cursor-pointer p-0"
                     >
                       Read Full Article
                       <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-orange fill-none stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]">
@@ -334,8 +366,8 @@ export default function HomePage({ navigate }) {
                     </button>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
 
           <div className="text-center mt-8">
