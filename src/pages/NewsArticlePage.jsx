@@ -57,8 +57,8 @@ export default function NewsArticlePage({ article, onBack }) {
         </p>
 
         {/* Sections */}
-        {article.sections.map((sec, i) => (
-          <div key={i} className="mb-12">
+        {article.sections?.map((sec, i) => (
+          <div key={sec.heading || `section-${i}`} className="mb-12">
             {sec.heading && (
               <h2 className="font-display text-2xl text-dark mb-4">{sec.heading}</h2>
             )}
@@ -87,7 +87,7 @@ export default function NewsArticlePage({ article, onBack }) {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {article.photos.map((src, i) => (
-                <div key={i} className={`rounded-xl overflow-hidden ${i === 0 ? 'col-span-2 md:col-span-2' : ''}`}>
+                <div key={src} className={`rounded-xl overflow-hidden ${i === 0 ? 'col-span-2 md:col-span-2' : ''}`}>
                   <img
                     src={src}
                     alt={`${article.title} — photo ${i + 1}`}
